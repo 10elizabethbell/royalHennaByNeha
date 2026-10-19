@@ -1,0 +1,911 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Royal Henna by Neha · Henna for every occasion · NJ, NYC, Philly, PA</title>
+<meta name="description" content="Henna and temporary tattoos for weddings, engagements, baby showers, birthdays, festivals and every occasion across New Jersey, New York City, Philadelphia and Pennsylvania. Book with Neha on WhatsApp.">
+<meta name="theme-color" content="#d6a476">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Royal Henna by Neha">
+<meta property="og:description" content="Henna for weddings, engagements, baby showers, birthdays and every occasion across NJ, NYC, Philly and PA. Book on WhatsApp.">
+<meta property="og:url" content="https://10elizabethbell.github.io/royalHennaByNeha/">
+<meta property="og:image" content="https://10elizabethbell.github.io/royalHennaByNeha/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234a1131'/%3E%3Ctext x='32' y='47' text-anchor='middle' font-family='Palatino,Georgia,serif' font-weight='700' font-size='44' fill='%23f4a53a'%3ER%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+/* ===== Tokens ===== */
+:root{
+  --skin:#d6a476;        /* the canvas: warm skin */
+  --skin-lit:#dfb085;
+  --ink:#3a0d27;         /* text on skin */
+  --ink-soft:#5e2443;
+  --wine:#4a1131;        /* drenched bands */
+  --rani:#a3205a;        /* rani pink, from the flyer */
+  --cream:#fbefe6;
+  --cream-soft:#f3d6df;
+  --marigold:#f4a53a;
+  --stain:#7a2410;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;
+  --sans:system-ui,-apple-system,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+  --gut:16px;
+  --radius:14px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;overscroll-behavior-y:none;scrollbar-color:var(--rani) var(--skin)}
+body{margin:0;background:var(--skin);color:var(--ink);font:400 1.0625rem/1.55 var(--sans);caret-color:var(--rani)}
+::selection{background:var(--rani);color:#fff}
+img,svg{display:block}
+a{color:inherit;text-underline-offset:.18em}
+h1,h2,h3{font-family:var(--serif);font-weight:700;text-transform:uppercase;letter-spacing:.01em;line-height:1;margin:0;text-wrap:balance}
+p{margin:0}
+:focus-visible{outline:3px solid var(--rani);outline-offset:3px;border-radius:6px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{max-width:1180px;margin:0 auto;padding:0 var(--gut)}
+
+/* ===== Buttons ===== */
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;border-radius:999px;border:2px solid var(--wine);font:700 1.0625rem/1 var(--sans);text-decoration:none;transition:background-color .2s,border-color .2s,color .2s,transform .15s}
+.btn svg{width:22px;height:22px;flex:none}
+.btn:active{transform:scale(.98)}
+.btn-fill{background:var(--wine);color:var(--cream)}
+.btn-fill:hover{background:var(--rani);border-color:var(--rani)}
+.btn-line{background:transparent;color:var(--wine)}
+.btn-line:hover{border-color:var(--rani);color:var(--rani)}
+
+/* ===== Header ===== */
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px var(--gut);max-width:1440px;margin:0 auto}
+.mark{text-decoration:none;display:flex;flex-direction:column;line-height:1}
+.mark b{font:700 1.125rem/1 var(--serif);letter-spacing:.14em;text-transform:uppercase}
+.mark span{font:italic 400 .9375rem/1.2 var(--serif);color:var(--ink-soft);letter-spacing:.02em;margin-top:3px}
+.tel{display:flex;align-items:center;gap:7px;min-height:44px;padding:0 2px;font:700 1rem/1 var(--sans);text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums}
+.tel svg{width:18px;height:18px}
+.tel:hover{color:var(--rani)}
+
+/* ===== Hero ===== */
+.hero{position:relative}
+.hero-copy{padding:18px var(--gut) 0}
+.hero h1{font-size:clamp(2.45rem,11.2vw,5.4rem);line-height:.96;letter-spacing:-.005em;max-width:9.5em}
+.promise{margin-top:16px;font-size:clamp(1.0625rem,4.6vw,1.25rem);line-height:1.45;max-width:31ch;color:var(--ink)}
+.cta{display:grid;gap:12px;margin-top:22px;max-width:420px}
+.stage-wrap{position:relative;margin-top:14px}
+.stage{display:block;width:100%;height:clamp(300px,46svh,440px);touch-action:none;cursor:none;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;
+  background:radial-gradient(60% 55% at 50% 48%,var(--skin-lit),var(--skin) 100%)}
+.hint{margin:0 var(--gut) 4px;font:italic 400 .9375rem/1.3 var(--serif);color:var(--ink-soft);pointer-events:none}
+
+/* ===== Henna lace edges between sections ===== */
+.edge{display:block;height:50px;margin:-1px 0;position:relative}
+.edge canvas{position:absolute;inset:0;width:100%;height:100%}
+.edge.on-wine{background:var(--wine)}
+.edge.on-rani{background:var(--rani)}
+
+/* ===== Bands ===== */
+.band{padding:52px 0 60px}
+.band h2{font-size:clamp(2rem,8.6vw,3.6rem)}
+.wine{background:var(--wine);color:var(--cream)}
+.rani{background:var(--rani);color:#fff}
+.note{margin-top:18px;font-size:.9375rem;color:var(--cream-soft)}
+
+/* Occasions */
+.rows{list-style:none;margin:26px 0 0;padding:0}
+.row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:8px 0;border-bottom:1px solid rgba(251,239,230,.18);text-decoration:none;font:700 1.25rem/1.2 var(--serif);letter-spacing:.01em}
+.rows li:first-child .row{border-top:1px solid rgba(251,239,230,.18)}
+.arrow{flex:none;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(251,239,230,.5);transition:background-color .2s,border-color .2s,color .2s}
+.arrow svg{width:18px;height:18px}
+.row:hover,.row:focus-visible{outline:none;background:none;box-shadow:none}
+.row:hover .arrow,.row:focus-visible .arrow{background:var(--marigold);border-color:var(--marigold);color:var(--wine)}
+.row:focus-visible .arrow{outline:3px solid var(--marigold);outline-offset:3px}
+
+/* Steps */
+.steps{list-style:none;margin:30px 0 0;padding:0;display:grid;gap:26px}
+.steps li{display:grid;grid-template-columns:38px 1fr;gap:4px 14px;align-items:baseline}
+.steps .n{grid-row:span 2;font:700 2.75rem/1 var(--serif);color:var(--stain)}
+.steps h3{font-size:1.375rem;letter-spacing:.02em}
+.steps p{grid-column:2;color:var(--ink);max-width:40ch}
+.area{margin-top:44px}
+.area h3{font-size:1.375rem}
+.area p{margin-top:8px;font:700 1.25rem/1.45 var(--serif)}
+.area p span{color:var(--stain)}
+.area p i{font-style:normal;white-space:nowrap}
+
+/* Work */
+.ig{display:flex;align-items:center;gap:16px;margin-top:26px;max-width:560px;min-height:84px;padding:14px 20px;border-radius:var(--radius);background:var(--cream);color:var(--wine);text-decoration:none;box-shadow:0 10px 22px -12px rgba(20,4,12,.45);transition:transform .2s,box-shadow .2s}
+.ig svg{width:40px;height:40px;flex:none;color:var(--rani)}
+.ig b{display:block;font:700 1.1875rem/1.2 var(--sans)}
+.ig span{display:block;margin-top:3px;font-size:.9375rem;color:var(--ink-soft)}
+.ig .go{margin-left:auto;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--wine);color:var(--cream);flex:none}
+.ig .go svg{width:18px;height:18px;color:inherit}
+.ig:hover{transform:translateY(-2px);box-shadow:0 16px 28px -14px rgba(20,4,12,.5)}
+
+/* Form */
+.plan{padding:44px 0 64px}
+.plan h2{font-size:clamp(2rem,8.6vw,3.6rem)}
+.plan-lede{margin-top:12px;max-width:40ch}
+form{margin-top:26px;display:grid;gap:20px;max-width:640px}
+fieldset{border:0;margin:0;padding:0;min-width:0}
+legend,label.l{display:block;font-weight:700;margin-bottom:8px}
+.opt{font-weight:400;color:var(--ink-soft)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips input{position:absolute;opacity:0;width:1px;height:1px}
+.chips label{display:flex;align-items:center;min-height:44px;padding:0 16px;border-radius:999px;border:1.5px solid rgba(58,13,39,.4);background:rgba(251,239,230,.55);cursor:pointer;font-weight:600;transition:background-color .15s,color .15s,outline-color .15s}
+.chips input:checked+label{background:var(--wine);border-color:var(--wine);color:var(--cream)}
+.chips label:hover,.chips input:focus-visible+label{outline:2px solid var(--rani);outline-offset:2px}
+input[type=text],input[type=date],input[type=number],textarea{display:block;width:100%;min-height:52px;padding:12px 14px;border-radius:12px;border:1.5px solid rgba(58,13,39,.4);background:var(--cream);color:var(--ink);font:400 1.0625rem/1.35 var(--sans);-webkit-appearance:none;appearance:none}
+input[type=date]{min-width:0}
+textarea{min-height:96px;resize:vertical}
+input:hover,textarea:hover,input:focus,textarea:focus{outline:2px solid var(--rani);outline-offset:1px;border-color:var(--rani)}
+::placeholder{color:#8a5a6e;opacity:1}
+.two{display:grid;gap:20px}
+.err{display:none;margin-top:6px;color:#6e0820;font-weight:700;font-size:.9375rem}
+.bad .err{display:block}
+.bad input,.bad .chips label{border-color:#6e0820}
+.send{display:grid;gap:12px;margin-top:4px}
+.send .btn{width:100%;max-width:420px;cursor:pointer}
+.send .btn:hover,.send .btn:focus-visible{outline:2px solid var(--rani);outline-offset:3px}
+.send small{font-size:.9375rem;color:var(--ink-soft)}
+.alt{background:none;border:0;padding:6px 0;min-height:44px;font:600 1rem/1.3 var(--sans);color:var(--ink);text-decoration:underline;cursor:pointer;justify-self:start}
+.alt:hover{color:var(--rani)}
+
+/* Close + footer */
+.close{padding:56px 0 40px}
+.close h2{font-size:clamp(2.2rem,10vw,4.6rem);line-height:.98}
+.close p{margin-top:16px;max-width:34ch;font-size:1.125rem;color:var(--cream-soft)}
+.close .btn{margin-top:24px;max-width:420px;background:var(--marigold);border-color:var(--marigold);color:var(--wine)}
+.close .btn:hover{background:var(--cream);border-color:var(--cream)}
+.close .or{margin-top:14px;font-size:1rem;color:var(--cream-soft)}
+.close .or a{font-weight:700;color:var(--cream);white-space:nowrap}
+footer{padding:28px 0 calc(32px + env(safe-area-inset-bottom));border-top:1px solid rgba(251,239,230,.16)}
+footer .wrap{display:grid;gap:14px}
+footer b{font:700 1.0625rem/1 var(--serif);letter-spacing:.12em;text-transform:uppercase}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--cream);font-weight:600}
+footer a:hover{color:var(--marigold)}
+footer small{color:var(--cream-soft);font-size:.875rem}
+
+/* ===== Desktop ===== */
+@media (min-width:720px){
+  :root{--gut:32px}
+  .edge{height:56px}
+  .steps{grid-template-columns:repeat(3,1fr);gap:32px}
+  .two{grid-template-columns:1fr 1fr}
+  .rows{columns:2;column-gap:48px}
+  .rows li{break-inside:avoid}
+  .rows li:nth-child(5) .row{border-top:1px solid rgba(251,239,230,.18)}
+  .band{padding:72px 0 84px}
+  footer ul{display:flex;gap:28px;flex-wrap:wrap}
+}
+@media (min-width:1024px){
+  .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);height:clamp(600px,calc(100svh - 68px),880px);max-width:1440px;margin:0 auto}
+  .hero-copy{align-self:center;padding:0 0 40px clamp(32px,5vw,96px)}
+  .cta{grid-template-columns:auto auto;justify-content:start;max-width:none}
+  .cta .btn{white-space:nowrap;padding:0 28px}
+  .stage-wrap{margin:0;min-height:0}
+  .stage{position:absolute;inset:0;height:100%;background:radial-gradient(50% 50% at 50% 50%,var(--skin-lit),var(--skin) 100%)}
+  .hint{position:absolute;z-index:1;left:auto;right:32px;top:auto;bottom:20px;margin:0}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<!--
+THESIS: A henna artist's site you can put henna on. The page is skin; a cone pipes a real mandala in wet paste, it dries, the paste crumbles off and the stain deepens orange to maroon. Refuses the category default of a photo-grid salon page with a pink script logo.
+OWN-WORLD: Warm skin ground (#d6a476), paste brown-black, stain orange to maroon; drenched wine (#4a1131) and rani pink (#a3205a) bands from her flyer; marigold for hover. Raise (Breton ornament program): one mark grammar of petal, dot, scallop and line, reused in every lace edge. Raise (night market): color commits by whole band, not by accent.
+STORY: Neha draws by hand, for any occasion, across NJ/NYC/Philly/PA; booking is one WhatsApp message.
+FIRST VIEWPORT: Phone: header wordmark left, 313 number top-right; 3-line serif headline; promise; WhatsApp (filled) + Plan your henna (outlined); the drawing stage fills the bottom of the screen.
+FORM: henna on skin, #1 of my 7; seed ce818efc assigned #7 (rangoli), declined: a different art form that misstates what she sells.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+-->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 3.5h2.6l1.4 4-2 1.4a12 12 0 0 0 6.5 6.5l1.4-2 4 1.4v2.6a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M12 2.6a9.4 9.4 0 0 0-8.1 14.2L2.6 21.4l4.7-1.2A9.4 9.4 0 1 0 12 2.6zm0 1.7a7.7 7.7 0 1 1-4 14.3l-.3-.2-2.8.7.8-2.7-.2-.3A7.7 7.7 0 0 1 12 4.3zm-3.3 4c-.2 0-.5 0-.7.3s-1 .9-1 2.3 1 2.7 1.2 2.9c.1.2 2 3.1 4.9 4.3 2.4 1 2.9.8 3.4.7.5 0 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4l-.5-.3-1.8-.9c-.3-.1-.4-.1-.6.1l-.8 1c-.2.2-.3.2-.6.1-.3-.2-1.1-.4-2.1-1.3-.8-.7-1.3-1.5-1.5-1.8-.1-.3 0-.4.1-.5l.4-.5.3-.5v-.5l-.8-2c-.2-.5-.4-.5-.6-.5z" fill="currentColor"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.25" fill="currentColor"/></symbol>
+</svg>
+
+<header class="top">
+  <a class="mark" href="#top" aria-label="Royal Henna by Neha, back to top"><b>Royal Henna</b><span>by Neha</span></a>
+  <a class="tel" href="tel:+13139796757"><svg aria-hidden="true"><use href="#i-phone"/></svg>313-979-6757</a>
+</header>
+
+<main id="top">
+<section class="hero" aria-labelledby="h-hero">
+  <div class="hero-copy">
+    <h1 id="h-hero">Henna worth showing off.</h1>
+    <p class="promise">I'm Neha. I take my time with every hand, line by line, until it looks the way you pictured it.</p>
+    <div class="cta">
+      <a class="btn btn-fill js-wa" href="https://wa.me/17324987248" data-occ=""><svg aria-hidden="true"><use href="#i-wa"/></svg>Book on WhatsApp</a>
+      <a class="btn btn-line" href="#plan">Plan your henna</a>
+    </div>
+  </div>
+  <div class="stage-wrap">
+    <p class="hint" aria-hidden="true">Draw here with your finger. It's henna.</p>
+    <canvas class="stage" id="stage" role="img" aria-label="A henna mandala being piped in fresh paste on skin. It dries, the paste comes off, and the stain deepens from orange to maroon. Draw on it with your finger or mouse."></canvas>
+  </div>
+</section>
+
+<div class="edge on-wine" data-edge="down" aria-hidden="true"><canvas></canvas></div>
+
+<section class="band wine" aria-labelledby="h-occ">
+  <div class="wrap">
+    <h2 id="h-occ">All occasions accepted</h2>
+    <ul class="rows">
+      <li><a class="row js-wa" href="https://wa.me/17324987248" data-occ="a wedding">Weddings<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      <li><a class="row js-wa" href="https://wa.me/17324987248" data-occ="an engagement">Engagements<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      <li><a class="row js-wa" href="https://wa.me/17324987248" data-occ="a baby shower">Baby showers<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      <li><a class="row js-wa" href="https://wa.me/17324987248" data-occ="a birthday party">Birthday parties<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      <li><a class="row js-wa" href="https://wa.me/17324987248" data-occ="an anniversary">Anniversaries<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      <li><a class="row js-wa" href="https://wa.me/17324987248" data-occ="a festival">Festivals<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      <li><a class="row js-wa" href="https://wa.me/17324987248" data-occ="a casual booking">Casual bookings<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      <li><a class="row js-wa" href="https://wa.me/17324987248" data-occ="temporary tattoos" data-kind="tattoo">Temporary tattoos<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+    </ul>
+    <p class="note">Tap one and WhatsApp opens with your message started.</p>
+  </div>
+</section>
+
+<div class="edge on-wine" data-edge="up" aria-hidden="true"><canvas></canvas></div>
+
+<section class="band" aria-labelledby="h-how">
+  <div class="wrap">
+    <h2 id="h-how">How booking works</h2>
+    <ol class="steps">
+      <li><span class="n" aria-hidden="true">1</span><h3>Message me</h3><p>Tell me the occasion, the date, where it is and how many people want henna.</p></li>
+      <li><span class="n" aria-hidden="true">2</span><h3>Pick your designs</h3><p>Send me pictures of designs you love, or let me suggest some for you.</p></li>
+      <li><span class="n" aria-hidden="true">3</span><h3>I come to you</h3><p>I bring everything and draw at your home or venue, so you can sit back and enjoy it.</p></li>
+    </ol>
+    <div class="area">
+      <h3>Where I go</h3>
+      <p><i>New Jersey</i> <span aria-hidden="true">·</span> <i>New York City</i> <span aria-hidden="true">·</span> <i>Philadelphia</i> <span aria-hidden="true">·</span> <i>Pennsylvania</i></p>
+    </div>
+  </div>
+</section>
+
+<div class="edge on-rani" data-edge="down" aria-hidden="true"><canvas></canvas></div>
+
+<section class="band rani" aria-labelledby="h-work">
+  <div class="wrap">
+    <h2 id="h-work">See my work</h2>
+    <a class="ig" href="https://www.instagram.com/royal_henna_by_neha/">
+      <svg aria-hidden="true"><use href="#i-ig"/></svg>
+      <span><b>Click to see more of my work.</b><span>@royal_henna_by_neha on Instagram</span></span>
+      <span class="go"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+    </a>
+  </div>
+</section>
+
+<div class="edge on-rani" data-edge="up" aria-hidden="true"><canvas></canvas></div>
+
+<section class="plan" id="plan" aria-labelledby="h-plan">
+  <div class="wrap">
+    <h2 id="h-plan">Plan your henna</h2>
+    <p class="plan-lede">Fill this in and I'll get your message on WhatsApp with everything I need to reply with a price and my availability.</p>
+    <form id="planForm" novalidate>
+      <fieldset id="f-occ">
+        <legend>What's the occasion?</legend>
+        <div class="chips">
+          <input type="radio" name="occ" id="o1" value="Wedding"><label for="o1">Wedding</label>
+          <input type="radio" name="occ" id="o2" value="Engagement"><label for="o2">Engagement</label>
+          <input type="radio" name="occ" id="o3" value="Baby shower"><label for="o3">Baby shower</label>
+          <input type="radio" name="occ" id="o4" value="Birthday party"><label for="o4">Birthday party</label>
+          <input type="radio" name="occ" id="o5" value="Anniversary"><label for="o5">Anniversary</label>
+          <input type="radio" name="occ" id="o6" value="Festival"><label for="o6">Festival</label>
+          <input type="radio" name="occ" id="o7" value="Casual booking"><label for="o7">Casual</label>
+          <input type="radio" name="occ" id="o8" value="Temporary tattoos"><label for="o8">Temporary tattoos</label>
+        </div>
+        <p class="err">Pick the occasion so I know what to plan for.</p>
+      </fieldset>
+      <div class="two">
+        <div id="f-date">
+          <label class="l" for="date">Date <span class="opt">(if you know it)</span></label>
+          <input type="date" id="date" name="date">
+        </div>
+        <div id="f-ppl">
+          <label class="l" for="ppl">How many people want henna? <span class="opt">(optional)</span></label>
+          <input type="number" id="ppl" name="ppl" inputmode="numeric" min="1" max="500" placeholder="For example, 6">
+        </div>
+      </div>
+      <div id="f-where">
+        <label class="l" for="where">Town or city</label>
+        <input type="text" id="where" name="where" autocomplete="address-level2" placeholder="For example, Edison, NJ">
+        <p class="err">Tell me the town so I can check I can get there.</p>
+      </div>
+      <div id="f-name">
+        <label class="l" for="name">Your name</label>
+        <input type="text" id="name" name="name" autocomplete="given-name">
+        <p class="err">Add your name so I know who I'm talking to.</p>
+      </div>
+      <div>
+        <label class="l" for="notes">Anything else? <span class="opt">(optional)</span></label>
+        <textarea id="notes" name="notes" placeholder="Bridal full hands, simple designs for guests, a time of day…"></textarea>
+      </div>
+      <div class="send">
+        <button class="btn btn-fill" type="submit"><svg aria-hidden="true"><use href="#i-wa"/></svg>Send on WhatsApp</button>
+        <small>WhatsApp opens with your message written. Nothing sends until you press send.</small>
+        <button class="alt" type="button" id="asText">No WhatsApp? Send it as a regular text instead.</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<div class="edge on-wine" data-edge="down" aria-hidden="true"><canvas></canvas></div>
+
+<section class="close wine" aria-labelledby="h-close">
+  <div class="wrap">
+    <h2 id="h-close">Royal Henna<br>by Neha</h2>
+    <p>Hands are in every photo from the day. I'll make sure yours are worth looking at.</p>
+    <a class="btn js-wa" href="https://wa.me/17324987248" data-occ=""><svg aria-hidden="true"><use href="#i-wa"/></svg>Book on WhatsApp</a>
+    <p class="or">Or call me at <a href="tel:+13139796757">313-979-6757</a></p>
+  </div>
+</section>
+</main>
+
+<footer class="wine">
+  <div class="wrap">
+    <b>Royal Henna by Neha</b>
+    <ul>
+      <li><a href="tel:+13139796757">313-979-6757</a></li>
+      <li><a class="js-wa" href="https://wa.me/17324987248" data-occ="">WhatsApp +1 (732) 498-7248</a></li>
+      <li><a href="https://www.instagram.com/royal_henna_by_neha/">Instagram @royal_henna_by_neha</a></li>
+    </ul>
+    <small>Henna and temporary tattoos for every occasion · NJ, NYC, Philly and PA</small>
+  </div>
+</footer>
+
+<script>
+/* ===== Contact links ===== */
+(function(){
+  var WA = 'https://wa.me/17324987248';
+  var SMS = 'sms:+13139796757';
+  function waLink(msg){ return WA + '?text=' + encodeURIComponent(msg); }
+  window.RH = { waLink: waLink, smsLink: function(msg){ return SMS + '?&body=' + encodeURIComponent(msg); } };
+  document.querySelectorAll('.js-wa').forEach(function(a){
+    var occ = a.getAttribute('data-occ');
+    var msg;
+    if (!occ) msg = "Hi Neha! I found your website and I'd like to book henna.";
+    else if (a.getAttribute('data-kind') === 'tattoo') msg = "Hi Neha! I'd like to book temporary tattoos.\nDate:\nWhere:\nHow many people:";
+    else msg = "Hi Neha! I'd like to book henna for " + occ + ".\nDate:\nWhere:\nHow many people:";
+    a.href = waLink(msg);
+  });
+})();
+
+/* ===== Plan-your-henna form: writes the WhatsApp message ===== */
+(function(){
+  var f = document.getElementById('planForm');
+  if (!f) return;
+  function val(id){ return (f.querySelector('#' + id).value || '').trim(); }
+  function niceDate(v){
+    var m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(v);
+    if (!m) return v;
+    var d = new Date(+m[1], +m[2] - 1, +m[3]);
+    return d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' });
+  }
+  function build(){
+    var ok = true, first = null;
+    function check(box, good){
+      box.classList.toggle('bad', !good);
+      if (!good){ ok = false; if (!first) first = box; }
+    }
+    var occ = f.querySelector('input[name=occ]:checked');
+    check(document.getElementById('f-occ'), !!occ);
+    check(document.getElementById('f-where'), !!val('where'));
+    check(document.getElementById('f-name'), !!val('name'));
+    if (!ok){
+      first.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      var focusable = first.querySelector('input');
+      if (focusable) setTimeout(function(){ focusable.focus({ preventScroll: true }); }, 350);
+      return null;
+    }
+    var lines = ["Hi Neha! I'd like to book " + (occ.value === 'Temporary tattoos' ? 'temporary tattoos.' : 'henna.')];
+    lines.push('Occasion: ' + occ.value);
+    lines.push('Date: ' + (val('date') ? niceDate(val('date')) : 'not set yet'));
+    lines.push('Where: ' + val('where'));
+    if (val('ppl')) lines.push('People getting henna: ' + val('ppl'));
+    lines.push('Name: ' + val('name'));
+    if (val('notes')) lines.push('Notes: ' + val('notes'));
+    return lines.join('\n');
+  }
+  f.addEventListener('submit', function(e){
+    e.preventDefault();
+    var msg = build();
+    if (msg) window.location.href = window.RH.waLink(msg);
+  });
+  document.getElementById('asText').addEventListener('click', function(){
+    var msg = build();
+    if (msg) window.location.href = window.RH.smsLink(msg);
+  });
+  f.addEventListener('input', function(e){
+    var box = e.target.closest('.bad');
+    if (box) box.classList.remove('bad');
+  });
+  f.addEventListener('change', function(e){
+    var box = e.target.closest('.bad');
+    if (box) box.classList.remove('bad');
+  });
+})();
+
+/* ===== Henna: paste, drying, scrape, stain ===== */
+(function(){
+  'use strict';
+  // ---- Tunables ----
+  var T = {
+    LINE_PHONE: 2.6,      // paste line width, css px
+    LINE_DESK: 3.2,
+    DRAW_SPEED_R: 1.9,    // hero cone speed, in mandala radii per second
+    DRAW_SPEED_MIN: 240,  // px/s floor
+    TRAVEL_SPEED: 1100,   // px/s when the cone lifts between strokes
+    DOT_DWELL: 16,        // px of drawing time spent squeezing out a dot
+    DRY: 2.2,             // s after a design is finished before the paste comes off
+    SWEEP: 2.4,           // s for the paste to come off across the whole design
+    FLAKE: 1.1,           // s for paste to crumble off one line
+    DEEPEN: 7,            // s from fresh orange stain to deep maroon
+    HOLD: 9,              // s the finished stain stays
+    FADE: 4.5,            // s it takes to fade before the next design
+    USER_WET: 6,          // s a visitor's own line stays wet
+    RESUME: 2.5,          // s after the last touch before the cone carries on
+    EDGE_SPEED: 950,      // px/s for the lace edges
+    EDGE_DRY: 1.2, EDGE_SWEEP: 1.6,
+    FLAKE_CHANCE: 0.22, FLAKE_MAX: 420
+  };
+  var STAIN = [[233,145,63],[184,70,26],[122,36,16]];
+  var reduced = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var SKIN = '#d6a476';
+
+  function stainRGB(k){
+    var a, b, t;
+    if (k < 0.45){ a = STAIN[0]; b = STAIN[1]; t = k / 0.45; }
+    else { a = STAIN[1]; b = STAIN[2]; t = (k - 0.45) / 0.55; }
+    return 'rgb(' + Math.round(a[0] + (b[0]-a[0])*t) + ',' + Math.round(a[1] + (b[1]-a[1])*t) + ',' + Math.round(a[2] + (b[2]-a[2])*t) + ')';
+  }
+
+  // ---- Paste surface: holds segments, renders their life ----
+  function Henna(canvas, opt){
+    this.c = canvas; this.ctx = canvas.getContext('2d');
+    this.fade = opt.fade; this.w = opt.w || 3; this.bg = opt.bg || null;
+    this.segs = []; this.flakes = []; this.W = 0; this.H = 0; this.dpr = 1;
+    this.resizes = 0;
+  }
+  Henna.prototype.resize = function(){
+    var r = this.c.getBoundingClientRect();
+    var W = Math.round(r.width), H = Math.round(r.height);
+    if (W === this.W && H === this.H) return false;
+    this.W = W; this.H = H; this.dpr = Math.min(window.devicePixelRatio || 1, 2);
+    this.c.width = Math.max(1, Math.round(W * this.dpr)); this.c.height = Math.max(1, Math.round(H * this.dpr));
+    this.resizes++;
+    return true;
+  };
+  Henna.prototype.add = function(x0, y0, x1, y1, cls, t, r){
+    var s = { x0: x0, y0: y0, x1: x1, y1: y1, c: cls, t: t, r: r, f: 0 };
+    this.segs.push(s); return s;
+  };
+  Henna.prototype.width = function(cls){ return cls === 1 ? this.w * 0.68 : cls === 2 ? this.w * 2.3 : this.w; };
+  Henna.prototype.draw = function(now, dt){
+    var ctx = this.ctx, segs = this.segs, live = [], busy = false;
+    var stains = {}, pastes = {}, key, b, i, s;
+    ctx.setTransform(this.dpr, 0, 0, this.dpr, 0, 0);
+    ctx.clearRect(0, 0, this.W, this.H);
+    if (this.bg) this.bg(ctx, this.W, this.H);
+    function bucket(map, k, cls, a, x){
+      var o = map[k];
+      if (!o){ o = map[k] = { p: new Path2D(), c: cls, a: a, x: x }; }
+      return o.p;
+    }
+    for (i = 0; i < segs.length; i++){
+      s = segs[i];
+      var p;
+      if (now < s.r){
+        var age = now - s.t, g = Math.max(0, Math.min(12, (age / 0.5) | 0));
+        p = bucket(pastes, 'w' + g + '_' + s.c, s.c, 1, 0.24 - g * 0.014);
+        if (g < 12) busy = true;
+      } else {
+        var rt = now - s.r;
+        if (rt < T.FLAKE){
+          var fq = Math.max(0, Math.min(9, (rt / T.FLAKE * 10) | 0)), fa = (fq + 0.5) / 10;
+          bucket(stains, 'f' + fq + '_' + s.c, s.c, fa, 0).moveTo(s.x0, s.y0);
+          stains['f' + fq + '_' + s.c].p.lineTo(s.x1, s.y1);
+          p = bucket(pastes, 'p' + fq + '_' + s.c, s.c, 1 - fa, 0.06);
+          if (!s.f){ s.f = 1; if (Math.random() < T.FLAKE_CHANCE && this.flakes.length < T.FLAKE_MAX) this.spawnFlake(s); }
+          busy = true;
+        } else {
+          var d = rt - T.FLAKE, k = Math.min(1, d / T.DEEPEN), a = 1;
+          if (k < 1) busy = true;
+          if (this.fade){
+            var e = d - T.DEEPEN - T.HOLD;
+            if (e > 0){ a = 1 - e / T.FADE; busy = true; if (a <= 0) continue; }
+          }
+          var kq = Math.round(k * 20), aq = Math.round(a * 12);
+          p = bucket(stains, 's' + kq + '_' + aq + '_' + s.c, s.c, aq / 12, kq / 20);
+        }
+      }
+      p.moveTo(s.x0, s.y0); p.lineTo(s.x1, s.y1);
+      live.push(s);
+    }
+    this.segs = live;
+    ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+    // stains: soft bleed into the skin, then the line
+    for (key in stains){
+      b = stains[key];
+      ctx.strokeStyle = key.charAt(0) === 'f' ? stainRGB(0) : stainRGB(b.x);
+      ctx.globalAlpha = b.a * 0.2; ctx.lineWidth = this.width(b.c) * 1.75; ctx.stroke(b.p);
+      ctx.globalAlpha = b.a * 0.92; ctx.lineWidth = this.width(b.c) * 0.95; ctx.stroke(b.p);
+    }
+    // paste: raised shadow, body, wet sheen
+    ctx.save(); ctx.translate(0.6, 1.1); ctx.strokeStyle = 'rgb(80,38,14)';
+    for (key in pastes){ b = pastes[key]; ctx.globalAlpha = b.a * 0.28; ctx.lineWidth = this.width(b.c) + 1.4; ctx.stroke(b.p); }
+    ctx.restore();
+    ctx.strokeStyle = '#2b1b0e';
+    for (key in pastes){ b = pastes[key]; ctx.globalAlpha = b.a; ctx.lineWidth = this.width(b.c); ctx.stroke(b.p); }
+    ctx.save(); ctx.translate(-this.w * 0.13, -this.w * 0.15); ctx.strokeStyle = 'rgb(255,236,208)';
+    for (key in pastes){ b = pastes[key]; if (b.x <= 0.02) continue; ctx.globalAlpha = b.a * b.x; ctx.lineWidth = this.width(b.c) * 0.32; ctx.stroke(b.p); }
+    ctx.restore();
+    ctx.globalAlpha = 1;
+    // crumbs of dry paste falling away
+    if (this.flakes.length){
+      busy = true;
+      var fl = [], q;
+      ctx.fillStyle = '#3a2614';
+      for (i = 0; i < this.flakes.length; i++){
+        q = this.flakes[i];
+        q.life -= dt; if (q.life <= 0) continue;
+        q.vy += 380 * dt; q.x += q.vx * dt; q.y += q.vy * dt; q.rot += q.vr * dt;
+        ctx.globalAlpha = Math.min(1, q.life / 0.35);
+        ctx.save(); ctx.translate(q.x, q.y); ctx.rotate(q.rot);
+        ctx.beginPath(); ctx.moveTo(-q.s, -q.s * 0.4); ctx.lineTo(q.s * 0.7, -q.s * 0.7); ctx.lineTo(q.s, q.s * 0.5); ctx.lineTo(-q.s * 0.5, q.s * 0.6); ctx.closePath(); ctx.fill();
+        ctx.restore();
+        fl.push(q);
+      }
+      this.flakes = fl; ctx.globalAlpha = 1;
+    }
+    return busy;
+  };
+  Henna.prototype.spawnFlake = function(s){
+    this.flakes.push({ x: (s.x0 + s.x1) / 2, y: (s.y0 + s.y1) / 2, vx: (Math.random() - 0.5) * 60, vy: -20 - Math.random() * 50,
+      life: 0.6 + Math.random() * 0.5, s: this.w * (0.35 + Math.random() * 0.45), rot: Math.random() * 6, vr: (Math.random() - 0.5) * 12 });
+  };
+  Henna.prototype.reveal = function(list, now, sweep){
+    var mn = Infinity, mx = -Infinity, i;
+    for (i = 0; i < list.length; i++){ mn = Math.min(mn, list[i].x0); mx = Math.max(mx, list[i].x0); }
+    var span = Math.max(1, mx - mn);
+    for (i = 0; i < list.length; i++){ list[i].r = now + ((list[i].x0 - mn) / span) * sweep + Math.random() * 0.18; }
+  };
+
+  // ---- Pattern geometry (marks: line, petal, dot, scallop) ----
+  function resample(pts, step){
+    var out = [pts[0]], acc = 0, i, px = pts[0][0], py = pts[0][1];
+    for (i = 1; i < pts.length; i++){
+      var x = pts[i][0], y = pts[i][1], dx = x - px, dy = y - py, L = Math.hypot(dx, dy);
+      if (!L) continue;
+      var t = step - acc;
+      while (t <= L){ out.push([px + dx * t / L, py + dy * t / L]); t += step; }
+      acc = L - (t - step);
+      px = x; py = y;
+    }
+    var last = pts[pts.length - 1], tail = out[out.length - 1];
+    if (Math.hypot(last[0] - tail[0], last[1] - tail[1]) > 0.3) out.push(last);
+    return out;
+  }
+  function handDrawn(strokes, amp){
+    // a steady hand still wavers a little: tiny slow drift along each line
+    return strokes.map(function(st){
+      if (st.cls === 2) return st;
+      var p1 = Math.random() * 6.28, p2 = Math.random() * 6.28, pts = resample(st.pts, 2), s = 0;
+      for (var i = 0; i < pts.length; i++){
+        s += 2;
+        pts[i] = [pts[i][0] + amp * Math.sin(s * 0.047 + p1), pts[i][1] + amp * Math.sin(s * 0.061 + p2)];
+      }
+      return { pts: pts, cls: st.cls };
+    });
+  }
+  function mandala(cx, cy, R, v){
+    var S = [], TAU = Math.PI * 2;
+    var n1 = [8, 10, 6][v % 3], n2 = [12, 14, 10][v % 3], n3 = n2 * 2, rot = v * 0.37;
+    var bulge = [1.6, 1.35, 1.8][v % 3];
+    function P(pts, cls){ S.push({ pts: pts, cls: cls || 0 }); }
+    function polar(r, a){ return [cx + Math.cos(a) * r, cy + Math.sin(a) * r]; }
+    function circ(r, a0){ var n = Math.max(24, Math.ceil(TAU * r / 3)), o = []; for (var i = 0; i <= n; i++) o.push(polar(r, a0 + i / n * TAU)); return o; }
+    function dot(p){ P([p, [p[0] + 0.01, p[1]]], 2); }
+    function loc(a, r0, u, w){ return [cx + Math.cos(a) * (r0 + u) - Math.sin(a) * w, cy + Math.sin(a) * (r0 + u) + Math.cos(a) * w]; }
+    function cubic(p0, p1, p2, p3, n, out){
+      for (var i = 0; i <= n; i++){
+        var t = i / n, m = 1 - t;
+        out.push([m*m*m*p0[0] + 3*m*m*t*p1[0] + 3*m*t*t*p2[0] + t*t*t*p3[0], m*m*m*p0[1] + 3*m*m*t*p1[1] + 3*m*t*t*p2[1] + t*t*t*p3[1]]);
+      }
+    }
+    function petal(a, r0, L, hw, bl){
+      var l = [], o = [];
+      cubic([0, -hw], [L * 0.3, -hw * bl], [L * 0.78, -hw * 0.55], [L, 0], 22, l);
+      cubic([L, 0], [L * 0.78, hw * 0.55], [L * 0.3, hw * bl], [0, hw], 22, l);
+      for (var i = 0; i < l.length; i++) o.push(loc(a, r0, l[i][0], l[i][1]));
+      return o;
+    }
+    function scallops(r, n, a0){
+      var rb = r * Math.sin(Math.PI / n), o = [];
+      for (var i = 0; i < n; i++){
+        var a = a0 + i / n * TAU, c = polar(r, a);
+        for (var j = 0; j <= 14; j++){ var th = a - Math.PI / 2 + j / 14 * Math.PI; o.push([c[0] + Math.cos(th) * rb, c[1] + Math.sin(th) * rb]); }
+      }
+      o.push(o[0]);
+      return { pts: o, rb: rb };
+    }
+    var i, a;
+    dot([cx, cy]);
+    P(circ(R * 0.05, rot));
+    P(circ(R * 0.1, rot));
+    var hw1 = R * 0.1 * Math.sin(Math.PI / n1) * 1.05;
+    for (i = 0; i < n1; i++){
+      a = rot + i / n1 * TAU;
+      P(petal(a, R * 0.1, R * 0.16, hw1, bulge));
+      P([loc(a, R * 0.1, R * 0.025, 0), loc(a, R * 0.1, R * 0.115, 0)], 1);
+    }
+    P(circ(R * 0.28, rot));
+    for (i = 0; i < n3; i++) dot(polar(R * 0.315, rot + (i + 0.5) / n3 * TAU));
+    P(circ(R * 0.35, rot));
+    var sc = scallops(R * 0.35, n2, rot);
+    P(sc.pts);
+    for (i = 0; i < n2; i++) dot(polar(R * 0.35 + sc.rb * 0.42, rot + i / n2 * TAU));
+    var hw2 = R * 0.37 * Math.sin(Math.PI / n2) * 0.95;
+    for (i = 0; i < n2; i++){
+      a = rot + (i + 0.5) / n2 * TAU;
+      P(petal(a, R * 0.37, R * 0.37, hw2, bulge));
+      P(petal(a, R * 0.41, R * 0.25, hw2 * 0.5, bulge), 1);
+      dot(polar(R * 0.79, a));
+      dot(polar(R * 0.62, rot + i / n2 * TAU));
+    }
+    var lace = scallops(R * 0.86, n3, rot + Math.PI / n3);
+    P(lace.pts);
+    for (i = 0; i < n3; i++) dot(polar(R * 0.86 + lace.rb + R * 0.055, rot + Math.PI / n3 + i / n3 * TAU));
+    return S;
+  }
+  function laceEdge(W, H, P, up){
+    // a henna cuff along a scalloped skin edge
+    var S = [], yb = H - P / 2, n = Math.ceil(W / P) + 1, off = (W - n * P) / 2, rr = P / 2 - 7, i, j;
+    function Y(y){ return up ? H - y : y; }
+    function pt(x, y){ return [x, Y(y)]; }
+    var line = [];
+    for (i = 0; i <= 40; i++) line.push(pt(8 + (W - 16) * i / 40, yb - 12));
+    S.push({ pts: line, cls: 0 });
+    var c = [];
+    for (i = 0; i < n; i++){
+      var cx = off + P / 2 + i * P;
+      for (j = 0; j <= 12; j++){ var th = Math.PI - j / 12 * Math.PI; c.push(pt(cx + Math.cos(th) * rr, yb + Math.sin(th) * rr)); }
+      if (i < n - 1){ c.push(pt(cx + P / 2, yb - 5)); }
+    }
+    c = c.filter(function(p){ return p[0] > 3 && p[0] < W - 3; });
+    if (c.length > 1) S.push({ pts: c, cls: 0 });
+    for (i = 0; i < n; i++){
+      var x = off + P / 2 + i * P;
+      if (x > 6 && x < W - 6) S.push({ pts: [pt(x, yb + rr * 0.45), pt(x + 0.01, yb + rr * 0.45)], cls: 2 });
+    }
+    for (i = n - 1; i >= 0; i--){
+      var cxp = off + (i + 1) * P;
+      if (cxp > 6 && cxp < W - 6) S.push({ pts: [pt(cxp, yb - 21), pt(cxp + 0.01, yb - 21)], cls: 2 });
+    }
+    return S;
+  }
+  function skinEdge(P, up){
+    return function(ctx, W, H){
+      var yb = H - P / 2, n = Math.ceil(W / P) + 1, off = (W - n * P) / 2;
+      ctx.save();
+      if (up){ ctx.translate(0, H); ctx.scale(1, -1); }
+      ctx.fillStyle = SKIN; ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(W, 0); ctx.lineTo(W, yb);
+      for (var i = n - 1; i >= 0; i--){ var cx = off + P / 2 + i * P; ctx.arc(cx, yb, P / 2, 0, Math.PI, false); }
+      ctx.lineTo(0, yb); ctx.closePath(); ctx.fill();
+      ctx.restore();
+    };
+  }
+
+  // ---- The cone ----
+  function drawCone(ctx, x, y, s){
+    ctx.save(); ctx.translate(x, y);
+    var sh = ctx.createRadialGradient(6 * s, 8 * s, 0, 6 * s, 8 * s, 14 * s);
+    sh.addColorStop(0, 'rgba(70,30,10,.22)'); sh.addColorStop(1, 'rgba(70,30,10,0)');
+    ctx.fillStyle = sh; ctx.beginPath(); ctx.ellipse(6 * s, 8 * s, 14 * s, 6 * s, -0.5, 0, Math.PI * 2); ctx.fill();
+    ctx.rotate(-0.92);
+    var L = 58 * s, Wb = 17 * s;
+    var g = ctx.createLinearGradient(0, -Wb / 2, 0, Wb / 2);
+    g.addColorStop(0, '#5a3d24'); g.addColorStop(0.45, '#2f1e10'); g.addColorStop(1, '#22150a');
+    ctx.fillStyle = g;
+    ctx.beginPath(); ctx.moveTo(0, 0); ctx.lineTo(L, -Wb / 2); ctx.quadraticCurveTo(L + 3 * s, 0, L, Wb / 2); ctx.closePath(); ctx.fill();
+    var cel = ctx.createLinearGradient(0, -Wb / 2, 0, Wb / 2);
+    cel.addColorStop(0, 'rgba(255,248,236,.34)'); cel.addColorStop(0.35, 'rgba(255,248,236,.05)'); cel.addColorStop(1, 'rgba(255,248,236,.14)');
+    ctx.fillStyle = cel; ctx.fill();
+    var x0 = L * 0.6, x1 = L * 0.7;
+    ctx.fillStyle = '#a3205a';
+    ctx.beginPath(); ctx.moveTo(x0, -Wb / 2 * x0 / L); ctx.lineTo(x1, -Wb / 2 * x1 / L); ctx.lineTo(x1, Wb / 2 * x1 / L); ctx.lineTo(x0, Wb / 2 * x0 / L); ctx.closePath(); ctx.fill();
+    ctx.fillStyle = 'rgba(250,240,228,.8)'; ctx.strokeStyle = 'rgba(120,80,50,.3)'; ctx.lineWidth = 0.8;
+    ctx.beginPath(); ctx.moveTo(L, -Wb * 0.45); ctx.lineTo(L + 10 * s, -Wb * 0.18); ctx.lineTo(L + 17 * s, -Wb * 0.58); ctx.lineTo(L + 19 * s, 0); ctx.lineTo(L + 16 * s, Wb * 0.52); ctx.lineTo(L + 10 * s, Wb * 0.2); ctx.lineTo(L, Wb * 0.45); ctx.closePath(); ctx.fill(); ctx.stroke();
+    ctx.restore();
+  }
+
+  // ---- A cone that pipes a list of strokes by itself ----
+  function Piper(henna, speed){
+    this.h = henna; this.speed = speed; this.strokes = []; this.si = 0; this.pi = 0; this.mode = 'travel';
+    this.x = 0; this.y = 0; this.laid = []; this.done = true;
+  }
+  Piper.prototype.load = function(strokes, from){
+    this.strokes = strokes; this.si = 0; this.pi = 0; this.mode = 'travel'; this.laid = []; this.done = false;
+    if (from){ this.x = from[0]; this.y = from[1]; } else if (strokes[0]){ this.x = strokes[0].pts[0][0]; this.y = strokes[0].pts[0][1]; }
+  };
+  Piper.prototype.step = function(dt, now){
+    var time = dt, h = this.h;
+    while (time > 0 && !this.done){
+      var st = this.strokes[this.si];
+      if (!st){ this.done = true; break; }
+      if (this.mode === 'travel'){
+        var tx = st.pts[0][0], ty = st.pts[0][1], dx = tx - this.x, dy = ty - this.y, dist = Math.hypot(dx, dy), need = dist / T.TRAVEL_SPEED;
+        if (need <= time){ time -= need; this.x = tx; this.y = ty; this.mode = 'draw'; this.pi = 0; if (st.cls === 2) time -= T.DOT_DWELL / this.speed; }
+        else { this.x += dx / dist * time * T.TRAVEL_SPEED; this.y += dy / dist * time * T.TRAVEL_SPEED; time = 0; }
+      } else {
+        var nx = st.pts[this.pi + 1];
+        if (!nx){ this.si++; this.mode = 'travel'; continue; }
+        var ddx = nx[0] - this.x, ddy = nx[1] - this.y, L = Math.hypot(ddx, ddy), nd = L / this.speed;
+        if (nd <= time){
+          this.laid.push(h.add(this.x, this.y, nx[0], nx[1], st.cls, now, Infinity));
+          this.x = nx[0]; this.y = nx[1]; this.pi++; time -= nd;
+        } else {
+          var f = time / nd, mx = this.x + ddx * f, my = this.y + ddy * f;
+          this.laid.push(h.add(this.x, this.y, mx, my, st.cls, now, Infinity));
+          this.x = mx; this.y = my; time = 0;
+        }
+      }
+    }
+  };
+  Piper.prototype.finishNow = function(now, revealedAgo){
+    // lay the whole design instantly (reduced motion)
+    for (var i = 0; i < this.strokes.length; i++){
+      var p = this.strokes[i].pts;
+      for (var j = 0; j + 1 < p.length; j++) this.laid.push(this.h.add(p[j][0], p[j][1], p[j+1][0], p[j+1][1], this.strokes[i].cls, now, now - revealedAgo));
+    }
+    this.done = true;
+  };
+
+  // ---- Shared loop ----
+  var actors = [], running = false, last = 0;
+  function frame(t){
+    var now = t / 1000, dt = Math.min(0.05, last ? now - last : 0.016);
+    last = now;
+    var any = false;
+    for (var i = 0; i < actors.length; i++){ if (actors[i].tick(now, dt)) any = true; }
+    if (any) requestAnimationFrame(frame); else { running = false; last = 0; }
+  }
+  function wake(){ if (!running){ running = true; requestAnimationFrame(frame); } }
+  function watch(el, actor){
+    if (!('IntersectionObserver' in window)){ actor.visible = true; wake(); return; }
+    new IntersectionObserver(function(es){ actor.visible = es[0].isIntersecting; if (actor.visible) wake(); }, { rootMargin: '80px 0px' }).observe(el);
+  }
+
+  // ---- Hero stage ----
+  (function(){
+    var c = document.getElementById('stage');
+    if (!c || !c.getContext) return;
+    var phone = function(){ return c.getBoundingClientRect().width < 700; };
+    var h = new Henna(c, { fade: !reduced, w: phone() ? T.LINE_PHONE : T.LINE_DESK });
+    var piper = new Piper(h, 300), variant = 0, phase = 'drawing', tPhase = 0, R = 100;
+    var user = { down: false, hover: null, q: [], last: null, laid: 0, lastInput: -99, type: 'mouse' };
+    var actor = { visible: false };
+
+    function newDesign(now, from){
+      var W = h.W, H = h.H;
+      R = Math.min(W, H) / 2 * 0.86 / 1.06;   // outer dots reach ~1.06R
+      piper.speed = Math.max(T.DRAW_SPEED_MIN, R * T.DRAW_SPEED_R);
+      piper.load(handDrawn(mandala(W / 2, H / 2, R, variant++), Math.max(0.35, R / 320)), from);
+      phase = 'drawing'; tPhase = now;
+      if (reduced){ piper.finishNow(now, T.FLAKE + T.DEEPEN); phase = 'still'; }
+    }
+    function layout(now){
+      if (!h.resize()) return;
+      h.w = h.W < 700 ? T.LINE_PHONE : T.LINE_DESK;
+      h.segs = []; h.flakes = [];
+      newDesign(now);
+    }
+
+    actor.tick = function(now, dt){
+      if (!actor.visible && !user.down) return false;
+      layout(now);
+      // the visitor's own piping
+      if (user.q.length){
+        var rect = c.getBoundingClientRect();
+        for (var i = 0; i < user.q.length; i++){
+          var x = user.q[i][0] - rect.left, y = user.q[i][1] - rect.top;
+          if (user.last){
+            if (Math.hypot(x - user.last[0], y - user.last[1]) < 0.8) continue;
+            h.add(user.last[0], user.last[1], x, y, 0, now, now + T.USER_WET); user.laid++;
+          }
+          user.last = [x, y];
+        }
+        user.q = [];
+      }
+      var paused = user.down || (user.hover && user.type === 'mouse') || now - user.lastInput < T.RESUME;
+      if (phase === 'drawing' && !paused){
+        piper.step(dt, now);
+        if (piper.done){ phase = 'drying'; tPhase = now; }
+      } else if (phase === 'drying' && now - tPhase > T.DRY){
+        h.reveal(piper.laid, now, T.SWEEP); phase = 'showing'; tPhase = now;
+      } else if (phase === 'showing' && now - tPhase > T.SWEEP + T.FLAKE + T.DEEPEN + T.HOLD + 1){
+        newDesign(now, [piper.x, piper.y]);
+      }
+      var busy = h.draw(now, dt);
+      var s = h.W < 700 ? 0.85 : 1;
+      if (user.hover && (user.type === 'mouse' || user.down)){
+        var r2 = c.getBoundingClientRect();
+        drawCone(h.ctx, user.hover[0] - r2.left, user.hover[1] - r2.top, s);
+      } else if (phase === 'drawing' && !paused){
+        drawCone(h.ctx, piper.x, piper.y, s);
+      }
+      if (reduced) return busy || user.down;
+      return actor.visible;
+    };
+
+    function pts(e){
+      var list = (e.getCoalescedEvents && e.getCoalescedEvents()) || [];
+      if (!list.length) list = [e];
+      for (var i = 0; i < list.length; i++) user.q.push([list[i].clientX, list[i].clientY]);
+    }
+    c.addEventListener('pointerdown', function(e){
+      e.preventDefault();
+      try { c.setPointerCapture(e.pointerId); } catch (_){}
+      user.down = true; user.type = e.pointerType || 'mouse'; user.last = null; user.laid = 0;
+      user.hover = [e.clientX, e.clientY]; user.q.push([e.clientX, e.clientY]); user.lastInput = performance.now() / 1000;
+      wake();
+    });
+    c.addEventListener('pointermove', function(e){
+      user.type = e.pointerType || 'mouse';
+      user.hover = [e.clientX, e.clientY];
+      if (user.down){ pts(e); user.lastInput = performance.now() / 1000; }
+      wake();
+    });
+    function up(e){
+      if (!user.down) return;
+      if (!user.laid && user.last){
+        // a tap leaves a dot
+        h.add(user.last[0], user.last[1], user.last[0] + 0.01, user.last[1], 2, performance.now() / 1000, performance.now() / 1000 + T.USER_WET);
+      }
+      user.down = false; user.last = null; user.lastInput = performance.now() / 1000;
+      if (e.pointerType !== 'mouse') user.hover = null;
+      wake();
+    }
+    c.addEventListener('pointerup', up);
+    c.addEventListener('pointercancel', up);
+    c.addEventListener('pointerleave', function(){ if (!user.down) user.hover = null; });
+    window.addEventListener('resize', wake);
+
+    actors.push(actor);
+    watch(c, actor);
+    actor.visible = true; wake();
+    window.__henna = { h: h, piper: piper, phase: function(){ return phase; } };
+  })();
+
+  // ---- Lace edges between sections ----
+  document.querySelectorAll('.edge').forEach(function(el){
+    var c = el.querySelector('canvas'), up = el.getAttribute('data-edge') === 'up';
+    var h = new Henna(c, { fade: false, w: 2.3 }), piper = new Piper(h, T.EDGE_SPEED);
+    var actor = { visible: false }, state = 'wait', t0 = 0, P = 40;
+    function build(now, instant){
+      P = h.W < 720 ? 40 : 48;
+      h.bg = skinEdge(P, up); h.segs = []; h.flakes = [];
+      piper.load(handDrawn(laceEdge(h.W, h.H, P, up), 0.3), [-20, up ? h.H - 10 : 10]);
+      if (instant || reduced){ piper.finishNow(now, T.FLAKE + T.DEEPEN + 1); state = 'still'; }
+      else state = 'drawing';
+    }
+    actor.tick = function(now, dt){
+      if (h.resize()) build(now, state === 'still' || state === 'staining');
+      if (!actor.visible && state !== 'staining') { if (state === 'still') h.draw(now, dt); return false; }
+      if (state === 'drawing'){
+        piper.step(dt, now);
+        if (piper.done){ state = 'drying'; t0 = now; }
+      } else if (state === 'drying' && now - t0 > T.EDGE_DRY){
+        h.reveal(piper.laid, now, T.EDGE_SWEEP); state = 'staining'; t0 = now;
+      }
+      var busy = h.draw(now, dt);
+      if (state === 'drawing') drawCone(h.ctx, piper.x, piper.y, 0.7);
+      if (state === 'staining' && !busy && now - t0 > T.EDGE_SWEEP + 0.5) state = 'still';
+      return state !== 'still';
+    };
+    actors.push(actor);
+    watch(el, actor);
+    window.addEventListener('resize', wake);
+  });
+})();
+</script>
+</body>
+</html>
