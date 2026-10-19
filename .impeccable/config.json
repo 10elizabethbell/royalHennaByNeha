@@ -11,6 +11,54 @@
         ],
         "createdAt": "2026-10-19T03:48:29.270Z",
         "reason": "agent: sections inset via .wrap child padding (16-96px), verified in desktop/phone screenshots 2026-10-18"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "rgb(255, 255, 255)",
+        "createdAt": "2026-10-19T03:54:45.547Z",
+        "reason": "agent: white text on rani bands (7:1), part of the built palette"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#8a5a6e",
+        "createdAt": "2026-10-19T03:54:45.666Z",
+        "reason": "agent: shipped one-off recorded at documentation, 2026-10-18 (input placeholder)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "2.2rem",
+        "createdAt": "2026-10-19T03:54:45.749Z",
+        "reason": "agent: shipped one-off recorded at documentation, 2026-10-18 (closing title)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "4.6rem",
+        "createdAt": "2026-10-19T03:54:45.827Z",
+        "reason": "agent: shipped one-off recorded at documentation, 2026-10-18 (closing title)"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "16px",
+        "createdAt": "2026-10-19T03:54:45.901Z",
+        "reason": "agent: shipped one-off recorded at documentation, 2026-10-18 (message preview bubble)"
+      },
+      {
+        "rule": "design-system-radius",
+        "value": "4px",
+        "createdAt": "2026-10-19T03:54:45.974Z",
+        "reason": "agent: shipped one-off recorded at documentation, 2026-10-18 (preview bubble tail corner)"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": ".875rem",
+        "createdAt": "2026-10-19T03:54:46.051Z",
+        "reason": "agent: footer small print"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "1rem",
+        "createdAt": "2026-10-19T03:54:46.124Z",
+        "reason": "agent: preview bubble, header phone and small UI text"
       }
     ]
   }
