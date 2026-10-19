@@ -1,0 +1,490 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-19T03:53:18+00:00",
+  "title": "Design System: Royal Henna by Neha",
+  "extensions": {
+    "colorMeta": {
+      "skin": {
+        "role": "neutral",
+        "displayName": "Skin",
+        "canonical": "oklch(75.5% 0.085 64)",
+        "tonalRamp": [
+          "#170600",
+          "#391c00",
+          "#5e3400",
+          "#7f5225",
+          "#a17245",
+          "#c49366",
+          "#ecb98a",
+          "#ffe6c4"
+        ]
+      },
+      "skin-lit": {
+        "role": "neutral",
+        "displayName": "Lit Skin",
+        "canonical": "oklch(79.0% 0.079 64)",
+        "tonalRamp": [
+          "#160700",
+          "#381c00",
+          "#5c3506",
+          "#7d532a",
+          "#9f734a",
+          "#c2946a",
+          "#e9ba8e",
+          "#ffe7c7"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Henna Ink",
+        "canonical": "oklch(24.7% 0.078 349)",
+        "tonalRamp": [
+          "#17040e",
+          "#381729",
+          "#5d2d46",
+          "#7e4b65",
+          "#a06a85",
+          "#c48ba6",
+          "#ebb0cc",
+          "#ffe0f5"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "oklch(35.6% 0.093 350)",
+        "tonalRamp": [
+          "#18030e",
+          "#3c1329",
+          "#622847",
+          "#844665",
+          "#a76685",
+          "#ca86a7",
+          "#f3accd",
+          "#ffddf5"
+        ]
+      },
+      "wine": {
+        "role": "primary",
+        "displayName": "Wine Band",
+        "canonical": "oklch(28.7% 0.093 350)",
+        "tonalRamp": [
+          "#19030e",
+          "#3c1329",
+          "#632847",
+          "#844665",
+          "#a76585",
+          "#cb86a7",
+          "#f3abcd",
+          "#ffdcf5"
+        ]
+      },
+      "rani": {
+        "role": "primary",
+        "displayName": "Rani Pink",
+        "canonical": "oklch(48.0% 0.171 360)",
+        "tonalRamp": [
+          "#23000a",
+          "#4e0022",
+          "#7e003c",
+          "#a3205a",
+          "#c9477a",
+          "#f06a9b",
+          "#ff90c0",
+          "#ffcbeb"
+        ]
+      },
+      "cream": {
+        "role": "neutral",
+        "displayName": "Cream",
+        "canonical": "oklch(95.9% 0.018 59)",
+        "tonalRamp": [
+          "#0e0a08",
+          "#29231e",
+          "#473e37",
+          "#655b54",
+          "#867b73",
+          "#a79c94",
+          "#cdc2b9",
+          "#f5ede6"
+        ]
+      },
+      "cream-soft": {
+        "role": "neutral",
+        "displayName": "Soft Cream",
+        "canonical": "oklch(90.3% 0.034 357)",
+        "tonalRamp": [
+          "#11080b",
+          "#2e1f24",
+          "#4f3840",
+          "#6e565e",
+          "#8f757d",
+          "#b1969f",
+          "#d8bbc4",
+          "#fee8ef"
+        ]
+      },
+      "marigold": {
+        "role": "secondary",
+        "displayName": "Marigold",
+        "canonical": "oklch(78.2% 0.149 70)",
+        "tonalRamp": [
+          "#1d0200",
+          "#441200",
+          "#6e2800",
+          "#904800",
+          "#b46900",
+          "#d88b0e",
+          "#ffb149",
+          "#ffe29c"
+        ]
+      },
+      "stain": {
+        "role": "tertiary",
+        "displayName": "Deep Stain",
+        "canonical": "oklch(39.3% 0.123 34)",
+        "tonalRamp": [
+          "#1f0000",
+          "#470a00",
+          "#731d08",
+          "#963e2a",
+          "#bb5f4a",
+          "#e0806a",
+          "#ffa68e",
+          "#ffd9c7"
+        ]
+      },
+      "stain-fresh": {
+        "role": "tertiary",
+        "displayName": "Fresh Stain",
+        "canonical": "oklch(73.4% 0.143 60)",
+        "tonalRamp": [
+          "#1e0100",
+          "#460e00",
+          "#722200",
+          "#954400",
+          "#b96500",
+          "#dd8633",
+          "#ffac5d",
+          "#ffdea7"
+        ]
+      },
+      "stain-mid": {
+        "role": "tertiary",
+        "displayName": "Rising Stain",
+        "canonical": "oklch(54.4% 0.157 39)",
+        "tonalRamp": [
+          "#230000",
+          "#4e0000",
+          "#7d0200",
+          "#a23100",
+          "#c8552b",
+          "#ee774e",
+          "#ff9d74",
+          "#ffd4b5"
+        ]
+      },
+      "paste": {
+        "role": "tertiary",
+        "displayName": "Paste",
+        "canonical": "oklch(23.9% 0.034 59)",
+        "tonalRamp": [
+          "#110905",
+          "#2d2117",
+          "#4d3c2e",
+          "#6c594b",
+          "#8d7969",
+          "#af9a8a",
+          "#d5bfaf",
+          "#fcebde"
+        ]
+      },
+      "error": {
+        "role": "neutral",
+        "displayName": "Error",
+        "canonical": "oklch(34.7% 0.132 17)",
+        "tonalRamp": [
+          "#200003",
+          "#490312",
+          "#761326",
+          "#9a3743",
+          "#be5861",
+          "#e47a81",
+          "#ff9fa6",
+          "#ffd5d8"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only; bold serif uppercase."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles; bold serif uppercase."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Step titles and Where I go; bold serif uppercase."
+      },
+      "list-title": {
+        "displayName": "List Title",
+        "purpose": "Service rows and place names; bold serif sentence case."
+      },
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "ROYAL HENNA in the header, widely tracked."
+      },
+      "aside": {
+        "displayName": "Aside",
+        "purpose": "Italic serif: by Neha, stage hint."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All running copy, 31-40ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons, legends, field labels."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Helper text, notes, errors, sub-lines."
+      }
+    },
+    "shadows": [
+      {
+        "name": "lifted-cream",
+        "value": "0 10px 22px -12px rgba(20,4,12,.45)",
+        "purpose": "Instagram link card on rani."
+      },
+      {
+        "name": "lifted-bubble",
+        "value": "0 10px 22px -14px rgba(20,4,12,.45)",
+        "purpose": "WhatsApp preview bubble on skin."
+      }
+    ],
+    "motion": [
+      {
+        "name": "state-color",
+        "value": "0.2s",
+        "purpose": "Background, border and color transitions on buttons, arrows, discs."
+      },
+      {
+        "name": "state-quick",
+        "value": "0.15s",
+        "purpose": "Chip state and button press transform."
+      },
+      {
+        "name": "press",
+        "value": "scale(.98)",
+        "purpose": "Button :active; disabled under reduced motion."
+      },
+      {
+        "name": "henna-dry",
+        "value": "2.2s",
+        "purpose": "Finished design rests wet before the paste comes off."
+      },
+      {
+        "name": "henna-sweep",
+        "value": "2.4s",
+        "purpose": "Paste comes off across the whole design."
+      },
+      {
+        "name": "henna-flake",
+        "value": "1.1s",
+        "purpose": "Paste crumbles off one line."
+      },
+      {
+        "name": "henna-deepen",
+        "value": "7s",
+        "purpose": "Stain deepens from stain-fresh through stain-mid (at 45%) to stain."
+      },
+      {
+        "name": "henna-hold",
+        "value": "9s",
+        "purpose": "Finished stain stays."
+      },
+      {
+        "name": "henna-fade",
+        "value": "4.5s",
+        "purpose": "Stain fades before the next design."
+      },
+      {
+        "name": "henna-user-wet",
+        "value": "6s",
+        "purpose": "A visitor's line stays wet."
+      },
+      {
+        "name": "henna-resume",
+        "value": "2.5s",
+        "purpose": "Cone resumes after the last touch."
+      },
+      {
+        "name": "edge-pipe",
+        "value": "950px/s; dry 1.2s; sweep 1.6s",
+        "purpose": "Lace edges pipe on scroll-in, then stain and stay."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "Show finished stains instantly; no piping, no press scale."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "narrow",
+        "value": "max-width: 380px"
+      },
+      {
+        "name": "tablet",
+        "value": "720px"
+      },
+      {
+        "name": "desktop",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Filled Button",
+      "kind": "button",
+      "refersTo": "button-fill",
+      "description": "Primary action on skin (Book on WhatsApp).",
+      "html": "<a class=\"ds-btn ds-btn-fill\" href=\"#\">Book on WhatsApp</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;border-radius:999px;border:2px solid #4a1131;font:700 1.0625rem/1 system-ui,-apple-system,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;text-decoration:none;cursor:pointer;transition:background-color .2s,border-color .2s,color .2s,transform .15s;} .ds-btn:active{transform:scale(.98)} .ds-btn-fill{background:#4a1131;color:#fbefe6} .ds-btn-fill:hover{background:#a3205a;border-color:#a3205a} .ds-btn:focus-visible{outline:3px solid #a3205a;outline-offset:3px}"
+    },
+    {
+      "name": "Outlined Button",
+      "kind": "button",
+      "refersTo": "button-line",
+      "description": "Secondary action on skin (Plan your henna).",
+      "html": "<a class=\"ds-btn-line\" href=\"#\">Plan your henna</a>",
+      "css": ".ds-btn-line{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;border-radius:999px;border:2px solid #4a1131;font:700 1.0625rem/1 system-ui,-apple-system,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;text-decoration:none;cursor:pointer;transition:background-color .2s,border-color .2s,color .2s,transform .15s;background:transparent;color:#4a1131} .ds-btn-line:active{transform:scale(.98)} .ds-btn-line:hover{border-color:#a3205a;color:#a3205a} .ds-btn-line:focus-visible{outline:3px solid #a3205a;outline-offset:3px}"
+    },
+    {
+      "name": "Marigold Button",
+      "kind": "button",
+      "refersTo": "button-marigold",
+      "description": "The single closing call to action on a wine band.",
+      "html": "<div class=\"ds-wine\"><a class=\"ds-btn-mg\" href=\"#\">Book on WhatsApp</a></div>",
+      "css": ".ds-wine{background:#4a1131;padding:24px} .ds-btn-mg{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;border-radius:999px;border:2px solid #4a1131;font:700 1.0625rem/1 system-ui,-apple-system,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;text-decoration:none;cursor:pointer;transition:background-color .2s,border-color .2s,color .2s,transform .15s;background:#f4a53a;border-color:#f4a53a;color:#4a1131} .ds-btn-mg:hover{background:#fbefe6;border-color:#fbefe6} .ds-btn-mg:focus-visible{outline:3px solid #f4a53a;outline-offset:3px}"
+    },
+    {
+      "name": "Service Row",
+      "kind": "custom",
+      "refersTo": "service-row",
+      "description": "Occasion row on wine; only the arrow responds on hover/focus.",
+      "html": "<div class=\"ds-rows\"><a class=\"ds-row\" href=\"#\">Weddings<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" aria-hidden=\"true\"><path d=\"M5 12h13M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a><a class=\"ds-row\" href=\"#\">Engagements<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" aria-hidden=\"true\"><path d=\"M5 12h13M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></div>",
+      "css": ".ds-rows{background:#4a1131;padding:16px;color:#fbefe6} .ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:8px 0;border-bottom:1px solid rgba(251,239,230,.18);color:#fbefe6;text-decoration:none;font:700 1.25rem/1.2 \"Iowan Old Style\",\"Palatino Linotype\",Palatino,\"Book Antiqua\",Georgia,serif;letter-spacing:.01em} .ds-row:first-child{border-top:1px solid rgba(251,239,230,.18)} .ds-arrow{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(251,239,230,.5);transition:background-color .2s,border-color .2s,color .2s} .ds-row:hover,.ds-row:focus-visible{outline:none} .ds-row:hover .ds-arrow,.ds-row:focus-visible .ds-arrow{background:#f4a53a;border-color:#f4a53a;color:#4a1131} .ds-row:focus-visible .ds-arrow{outline:3px solid #f4a53a;outline-offset:3px}"
+    },
+    {
+      "name": "Occasion Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Radio chip in the plan form; selected fills wine, hover/focus gets a rani outline.",
+      "html": "<div class=\"ds-chips\"><input type=\"radio\" name=\"ds-o\" id=\"ds-o1\" checked><label for=\"ds-o1\">Wedding</label><input type=\"radio\" name=\"ds-o\" id=\"ds-o2\"><label for=\"ds-o2\">Baby shower</label></div>",
+      "css": ".ds-chips{display:flex;flex-wrap:wrap;gap:10px;background:#d6a476;padding:16px;font-family:system-ui,-apple-system,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif} .ds-chips input{position:absolute;opacity:0;width:1px;height:1px} .ds-chips label{display:flex;align-items:center;min-height:44px;padding:0 16px;border-radius:999px;border:1.5px solid rgba(58,13,39,.6);background:rgba(251,239,230,.55);color:#3a0d27;cursor:pointer;font-weight:600;transition:background-color .15s,color .15s,outline-color .15s} .ds-chips input:checked+label{background:#4a1131;border-color:#4a1131;color:#fbefe6} .ds-chips label:hover,.ds-chips input:focus-visible+label{outline:2px solid #a3205a;outline-offset:2px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Cream field on skin; hover and focus both get the rani outline.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-where\">Town or city</label><input id=\"ds-where\" type=\"text\" placeholder=\"For example, Edison, NJ\"></div>",
+      "css": ".ds-field{background:#d6a476;padding:16px;font-family:system-ui,-apple-system,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;color:#3a0d27} .ds-field label{display:block;font-weight:700;margin-bottom:8px} .ds-field input{display:block;width:100%;box-sizing:border-box;min-height:52px;padding:12px 14px;border-radius:12px;border:1.5px solid rgba(58,13,39,.6);background:#fbefe6;color:#3a0d27;font:400 1.0625rem/1.35 system-ui,-apple-system,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;appearance:none} .ds-field input::placeholder{color:#8a5a6e} .ds-field input:hover,.ds-field input:focus{outline:2px solid #a3205a;outline-offset:1px;border-color:#a3205a}"
+    },
+    {
+      "name": "Instagram Link Card",
+      "kind": "card",
+      "refersTo": "link-card",
+      "description": "The one card: cream on rani with a soft lift and an arrow disc.",
+      "html": "<div class=\"ds-rani\"><a class=\"ds-ig\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"40\" height=\"40\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"5.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"12\" cy=\"12\" r=\"4.2\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"/><circle cx=\"17.4\" cy=\"6.6\" r=\"1.25\" fill=\"currentColor\"/></svg><span><b>Click to see more of my work.</b><span>@royal_henna_by_neha on Instagram</span></span><span class=\"ds-go\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" aria-hidden=\"true\"><path d=\"M5 12h13M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></div>",
+      "css": ".ds-rani{background:#a3205a;padding:24px} .ds-ig{display:flex;align-items:center;gap:16px;max-width:560px;min-height:84px;padding:14px 20px;border-radius:14px;background:#fbefe6;color:#4a1131;text-decoration:none;font-family:system-ui,-apple-system,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;box-shadow:0 10px 22px -12px rgba(20,4,12,.45)} .ds-ig>svg{flex:none;color:#a3205a} .ds-ig b{display:block;font:700 1.1875rem/1.2 system-ui,-apple-system,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif} .ds-ig span span{display:block;margin-top:3px;font-size:.9375rem;color:#5e2443} .ds-go{margin-left:auto;flex:none;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:#4a1131;color:#fbefe6;transition:background-color .2s} .ds-ig:hover .ds-go,.ds-ig:focus-visible .ds-go{background:#a3205a} .ds-ig:focus-visible{outline:3px solid #f4a53a;outline-offset:3px}"
+    },
+    {
+      "name": "Header",
+      "kind": "nav",
+      "refersTo": "wordmark",
+      "description": "Non-sticky header: serif wordmark left, the only phone number top-right.",
+      "html": "<header class=\"ds-top\"><a class=\"ds-mark\" href=\"#\"><b>Royal Henna</b><span>by Neha</span></a><a class=\"ds-tel\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" aria-hidden=\"true\"><path d=\"M6.6 3.5h2.6l1.4 4-2 1.4a12 12 0 0 0 6.5 6.5l1.4-2 4 1.4v2.6a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linejoin=\"round\"/></svg>313-979-6757</a></header>",
+      "css": ".ds-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;background:#d6a476;color:#3a0d27} .ds-mark{display:flex;flex-direction:column;line-height:1;color:inherit;text-decoration:none} .ds-mark b{font:700 1.125rem/1 \"Iowan Old Style\",\"Palatino Linotype\",Palatino,\"Book Antiqua\",Georgia,serif;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap} .ds-mark span{font:italic 400 .9375rem/1.2 \"Iowan Old Style\",\"Palatino Linotype\",Palatino,\"Book Antiqua\",Georgia,serif;color:#5e2443;letter-spacing:.02em;margin-top:3px} .ds-tel{display:flex;align-items:center;gap:7px;min-height:44px;font:700 1rem/1 system-ui,-apple-system,\"Segoe UI\",\"Helvetica Neue\",Arial,sans-serif;color:inherit;text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums} .ds-tel:hover{color:#a3205a} .ds-tel:focus-visible,.ds-mark:focus-visible{outline:3px solid #a3205a;outline-offset:3px;border-radius:6px}"
+    },
+    {
+      "name": "Lace Edge",
+      "kind": "custom",
+      "description": "Scalloped skin seam into a wine band; in the build the henna cuff is piped live on canvas. Static approximation of the scallop silhouette only.",
+      "html": "<div class=\"ds-edge\"></div>",
+      "css": ".ds-edge{height:50px;background:radial-gradient(circle at 20px 30px,#d6a476 19.5px,transparent 20px) 0 0/40px 50px repeat-x,linear-gradient(#d6a476 0 30px,#4a1131 30px)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Henna on Skin",
+    "overview": "**Creative North Star: \"Henna on Skin\"**\n\nThe page is skin, and the ink on it is henna. The ground everywhere outside the bands is warm skin (`skin`); every decorative mark is drawn live by a canvas henna cone in wet brown-black paste that dries, crumbles off, and leaves a stain that deepens from fresh orange to maroon. Nothing ornamental is a static image: the hero mandala and every lace edge between sections are piped by the same engine from one mark grammar of line, petal, dot and scallop. Visitors can pipe their own paste with a finger or mouse, and it stains the same way.\n\nColor commits by whole band, not by accent. Sections are either bare skin, fully drenched wine (`wine`), or fully drenched rani pink (`rani`), taken from Neha's flyer; each band boundary is a scalloped skin cuff carrying a henna lace border. Marigold (`marigold`) is the one hover and celebration accent. Type is the owner's house rule: system fonts only, with the system serif (Iowan Old Style, Palatino, Georgia) setting every heading in bold uppercase to echo the \"ROYAL\" serif on her flyer, and the system sans for everything you read or tap.\n\nDensity is phone-first and generous: one column, 16px gutters, 44px minimum touch targets, big pill buttons. The page refuses the category default of a photo-grid salon page with a pink script logo.",
+    "keyCharacteristics": [
+      "Warm skin ground; wine and rani bands drenched edge to edge",
+      "Every ornament is live-piped henna that dries and stains (paste, stain-fresh, stain-mid, stain)",
+      "One mark grammar: line, petal, dot, scallop, reused in every lace edge and mandala",
+      "System serif headings, bold and uppercase; system sans body (house rule)",
+      "Pills for actions, 12-14px soft corners for fields and cards, scallops at section seams",
+      "Marigold signals hover on dark bands; rani outlines signal hover/focus on form controls"
+    ],
+    "rules": [
+      {
+        "name": "The Whole-Band Rule",
+        "body": "Color commits by section, not by accent. A section is bare skin, drenched wine, or drenched rani; never a wine card floating on skin, never a rani stripe inside a wine band.",
+        "section": "colors"
+      },
+      {
+        "name": "The Henna-Ramp Rule",
+        "body": "`paste`, `stain-fresh`, `stain-mid` and `stain` belong to henna marks. Outside the canvas, only `stain` appears, and only as a numeral or separator on skin. Never use the ramp for buttons or UI states.",
+        "section": "colors"
+      },
+      {
+        "name": "The Marigold-Is-Response Rule",
+        "body": "Marigold appears where something answers you (hover, focus on dark bands) plus the single closing call to action. It is never a section fill.",
+        "section": "colors"
+      },
+      {
+        "name": "The House Fonts Rule",
+        "body": "System stacks only. Headings use the system serif; body, labels and controls use the system sans. Do not load a web font.",
+        "section": "typography"
+      },
+      {
+        "name": "The Serif-Shouts Rule",
+        "body": "Headings h1-h3 are bold serif uppercase at line-height 1 or tighter. Sentence case serif is for list items; italic serif is only for small asides.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Number Rule",
+        "body": "The phone number appears top-right in the header on the first screen and nowhere else above the fold. There is no sticky bar or floating action button; the header scrolls away.",
+        "section": "layout"
+      },
+      {
+        "name": "The Paste-Has-Depth Rule",
+        "body": "Only henna marks get material depth (offset shadow under wet paste, cream sheen on top). UI depth stays at one soft cream lift.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do draw every ornament with the henna engine in the four-mark grammar (line, petal, dot, scallop) and let it dry and stain through the paste-to-stain ramp.",
+      "Do drench whole sections in `wine` or `rani` and join them to skin with a scalloped lace edge (40px pitch phone, 48px desktop).",
+      "Do set headings in the system serif, bold uppercase, and everything else in the system sans.",
+      "Do keep every tap target at least 44px and primary buttons at 56px full pills.",
+      "Do give every form control (field, chip, submit, text fallback) a rani outline on hover and focus-visible.",
+      "Do switch focus rings to marigold on wine and rani bands; rani on skin.",
+      "Do write labels, errors and helper text in Neha's first person."
+    ],
+    "donts": [
+      "Don't load web fonts; the system stacks are the house rule.",
+      "Don't show the phone number anywhere on the first screen except top-right in the header, and don't add a sticky bar or floating call button.",
+      "Don't add email links, except a single footer email if one ever exists.",
+      "Don't change a service row's background, text, outline or shadow on hover; only its arrow fills marigold.",
+      "Don't use the stain or paste colors for UI states, and don't use marigold as a section fill.",
+      "Don't use static or clip-art henna as ornament, or stock photos of other artists' work; ornament is piped live. Neha's own work photos are content and belong in the work band.",
+      "Don't add layered shadows; the only lift is the soft cream shadow under a cream object on color."
+    ]
+  }
+}
