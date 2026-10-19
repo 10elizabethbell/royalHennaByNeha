@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-19T03:48:29.270Z",
+        "reason": "agent: sections inset via .wrap child padding (16-96px), verified in desktop/phone screenshots 2026-10-18"
+      }
+    ]
+  }
+}

@@ -43,6 +43,7 @@ a{color:inherit;text-underline-offset:.18em}
 h1,h2,h3{font-family:var(--serif);font-weight:700;text-transform:uppercase;letter-spacing:.01em;line-height:1;margin:0;text-wrap:balance}
 p{margin:0}
 :focus-visible{outline:3px solid var(--rani);outline-offset:3px;border-radius:6px}
+.wine :focus-visible,.rani :focus-visible{outline-color:var(--marigold)}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .wrap{max-width:1180px;margin:0 auto;padding:0 var(--gut)}
 
@@ -58,7 +59,7 @@ p{margin:0}
 /* ===== Header ===== */
 .top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px var(--gut);max-width:1440px;margin:0 auto}
 .mark{text-decoration:none;display:flex;flex-direction:column;line-height:1}
-.mark b{font:700 1.125rem/1 var(--serif);letter-spacing:.14em;text-transform:uppercase}
+.mark b{font:700 1.125rem/1 var(--serif);letter-spacing:.14em;text-transform:uppercase;white-space:nowrap}
 .mark span{font:italic 400 .9375rem/1.2 var(--serif);color:var(--ink-soft);letter-spacing:.02em;margin-top:3px}
 .tel{display:flex;align-items:center;gap:7px;min-height:44px;padding:0 2px;font:700 1rem/1 var(--sans);text-decoration:none;white-space:nowrap;font-variant-numeric:tabular-nums}
 .tel svg{width:18px;height:18px}
@@ -66,14 +67,14 @@ p{margin:0}
 
 /* ===== Hero ===== */
 .hero{position:relative}
-.hero-copy{padding:18px var(--gut) 0}
+.hero-copy{padding:12px var(--gut) 0}
 .hero h1{font-size:clamp(2.45rem,11.2vw,5.4rem);line-height:.96;letter-spacing:-.005em;max-width:9.5em}
-.promise{margin-top:16px;font-size:clamp(1.0625rem,4.6vw,1.25rem);line-height:1.45;max-width:31ch;color:var(--ink)}
-.cta{display:grid;gap:12px;margin-top:22px;max-width:420px}
-.stage-wrap{position:relative;margin-top:14px}
-.stage{display:block;width:100%;height:clamp(300px,46svh,440px);touch-action:none;cursor:none;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;
+.promise{margin-top:12px;font-size:clamp(1.0625rem,4.6vw,1.25rem);line-height:1.45;max-width:31ch;color:var(--ink)}
+.cta{display:grid;gap:10px;margin-top:18px;max-width:420px}
+.stage-wrap{position:relative;margin-top:12px}
+.stage{display:block;width:100%;height:clamp(300px,46vh,440px);height:clamp(300px,46svh,440px);touch-action:none;cursor:none;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;
   background:radial-gradient(60% 55% at 50% 48%,var(--skin-lit),var(--skin) 100%)}
-.hint{margin:0 var(--gut) 4px;font:italic 400 .9375rem/1.3 var(--serif);color:var(--ink-soft);pointer-events:none}
+.hint{margin:0 var(--gut) 2px;font:italic 400 .9375rem/1.3 var(--serif);color:var(--ink-soft);pointer-events:none}
 
 /* ===== Henna lace edges between sections ===== */
 .edge{display:block;height:50px;margin:-1px 0;position:relative}
@@ -117,7 +118,8 @@ p{margin:0}
 .ig span{display:block;margin-top:3px;font-size:.9375rem;color:var(--ink-soft)}
 .ig .go{margin-left:auto;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:var(--wine);color:var(--cream);flex:none}
 .ig .go svg{width:18px;height:18px;color:inherit}
-.ig:hover{transform:translateY(-2px);box-shadow:0 16px 28px -14px rgba(20,4,12,.5)}
+.ig .go{transition:background-color .2s}
+.ig:hover .go,.ig:focus-visible .go{background:var(--rani)}
 
 /* Form */
 .plan{padding:44px 0 64px}
@@ -129,11 +131,12 @@ legend,label.l{display:block;font-weight:700;margin-bottom:8px}
 .opt{font-weight:400;color:var(--ink-soft)}
 .chips{display:flex;flex-wrap:wrap;gap:10px}
 .chips input{position:absolute;opacity:0;width:1px;height:1px}
-.chips label{display:flex;align-items:center;min-height:44px;padding:0 16px;border-radius:999px;border:1.5px solid rgba(58,13,39,.4);background:rgba(251,239,230,.55);cursor:pointer;font-weight:600;transition:background-color .15s,color .15s,outline-color .15s}
+.chips label{display:flex;align-items:center;min-height:44px;padding:0 16px;border-radius:999px;border:1.5px solid rgba(58,13,39,.6);background:rgba(251,239,230,.55);cursor:pointer;font-weight:600;transition:background-color .15s,color .15s,outline-color .15s}
 .chips input:checked+label{background:var(--wine);border-color:var(--wine);color:var(--cream)}
 .chips label:hover,.chips input:focus-visible+label{outline:2px solid var(--rani);outline-offset:2px}
-input[type=text],input[type=date],input[type=number],textarea{display:block;width:100%;min-height:52px;padding:12px 14px;border-radius:12px;border:1.5px solid rgba(58,13,39,.4);background:var(--cream);color:var(--ink);font:400 1.0625rem/1.35 var(--sans);-webkit-appearance:none;appearance:none}
+input[type=text],input[type=date],input[type=number],textarea{display:block;width:100%;min-height:52px;padding:12px 14px;border-radius:12px;border:1.5px solid rgba(58,13,39,.6);background:var(--cream);color:var(--ink);font:400 1.0625rem/1.35 var(--sans);-webkit-appearance:none;appearance:none}
 input[type=date]{min-width:0}
+input[type=date]::-webkit-date-and-time-value{text-align:left}
 textarea{min-height:96px;resize:vertical}
 input:hover,textarea:hover,input:focus,textarea:focus{outline:2px solid var(--rani);outline-offset:1px;border-color:var(--rani)}
 ::placeholder{color:#8a5a6e;opacity:1}
@@ -144,9 +147,11 @@ input:hover,textarea:hover,input:focus,textarea:focus{outline:2px solid var(--ra
 .send{display:grid;gap:12px;margin-top:4px}
 .send .btn{width:100%;max-width:420px;cursor:pointer}
 .send .btn:hover,.send .btn:focus-visible{outline:2px solid var(--rani);outline-offset:3px}
+.send .btn-fill:hover{background:var(--wine);border-color:var(--wine)}
 .send small{font-size:.9375rem;color:var(--ink-soft)}
-.alt{background:none;border:0;padding:6px 0;min-height:44px;font:600 1rem/1.3 var(--sans);color:var(--ink);text-decoration:underline;cursor:pointer;justify-self:start}
-.alt:hover{color:var(--rani)}
+.alt{background:none;border:0;padding:6px 0;min-height:44px;font:600 1rem/1.3 var(--sans);color:var(--ink);text-decoration:underline;cursor:pointer;justify-self:start;text-align:left}
+.alt:hover,.alt:focus-visible{color:var(--rani);outline:2px solid var(--rani);outline-offset:2px;border-radius:6px}
+.preview{display:none}
 
 /* Close + footer */
 .close{padding:56px 0 40px}
@@ -154,14 +159,18 @@ input:hover,textarea:hover,input:focus,textarea:focus{outline:2px solid var(--ra
 .close p{margin-top:16px;max-width:34ch;font-size:1.125rem;color:var(--cream-soft)}
 .close .btn{margin-top:24px;max-width:420px;background:var(--marigold);border-color:var(--marigold);color:var(--wine)}
 .close .btn:hover{background:var(--cream);border-color:var(--cream)}
-.close .or{margin-top:14px;font-size:1rem;color:var(--cream-soft)}
-.close .or a{font-weight:700;color:var(--cream);white-space:nowrap}
+.preview h3{font:700 1rem/1.2 var(--sans);text-transform:none;letter-spacing:0}
+.preview .bubble{margin-top:12px;padding:16px 18px 14px;border-radius:16px 16px 16px 4px;background:var(--cream);box-shadow:0 10px 22px -14px rgba(20,4,12,.45);white-space:pre-wrap;font:400 1rem/1.5 var(--sans);color:var(--ink);min-height:120px}
+.preview .to{margin-top:10px;font-size:.9375rem;color:var(--ink-soft)}
+.hint .m{display:none}
+@media (pointer:fine){.hint .t{display:none}.hint .m{display:inline}}
 footer{padding:28px 0 calc(32px + env(safe-area-inset-bottom));border-top:1px solid rgba(251,239,230,.16)}
 footer .wrap{display:grid;gap:14px}
 footer b{font:700 1.0625rem/1 var(--serif);letter-spacing:.12em;text-transform:uppercase}
 footer ul{list-style:none;margin:0;padding:0;display:grid;gap:2px}
 footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--cream);font-weight:600}
 footer a:hover{color:var(--marigold)}
+footer li span{display:inline-flex;align-items:center;min-height:44px;color:var(--cream-soft)}
 footer small{color:var(--cream-soft);font-size:.875rem}
 
 /* ===== Desktop ===== */
@@ -176,16 +185,25 @@ footer small{color:var(--cream-soft);font-size:.875rem}
   .band{padding:72px 0 84px}
   footer ul{display:flex;gap:28px;flex-wrap:wrap}
 }
+@media (max-width:380px){.mark b{font-size:1rem;letter-spacing:.1em}}
 @media (min-width:1024px){
-  .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);height:clamp(600px,calc(100svh - 68px),880px);max-width:1440px;margin:0 auto}
+  .top{padding:12px clamp(32px,5vw,96px)}
+  .wrap{max-width:1440px;padding:0 clamp(32px,5vw,96px)}
+  .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);height:clamp(600px,calc(100vh - 68px),880px);height:clamp(600px,calc(100svh - 68px),880px);max-width:1440px;margin:0 auto}
   .hero-copy{align-self:center;padding:0 0 40px clamp(32px,5vw,96px)}
   .cta{grid-template-columns:auto auto;justify-content:start;max-width:none}
   .cta .btn{white-space:nowrap;padding:0 28px}
   .stage-wrap{margin:0;min-height:0}
   .stage{position:absolute;inset:0;height:100%;background:radial-gradient(50% 50% at 50% 50%,var(--skin-lit),var(--skin) 100%)}
-  .hint{position:absolute;z-index:1;left:auto;right:32px;top:auto;bottom:20px;margin:0}
+  .hint{position:absolute;z-index:1;left:50%;right:auto;top:auto;bottom:24px;margin:0;transform:translateX(-50%);white-space:nowrap}
+  .work{display:flex;align-items:center;justify-content:space-between;gap:48px}
+  .work .ig{margin-top:0;flex:0 1 560px}
+  .plan .wrap{display:grid;grid-template-columns:minmax(0,640px) minmax(0,400px);column-gap:72px;align-items:start}
+  .plan .wrap > h2,.plan .wrap > .plan-lede{grid-column:1}
+  .plan form{grid-column:1}
+  .preview{display:block;grid-column:2;grid-row:1 / span 3;position:sticky;top:32px;margin-top:6px}
 }
-@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media (prefers-reduced-motion:reduce){.btn:active{transform:none}}
 </style>
 </head>
 <body>
@@ -220,7 +238,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     </div>
   </div>
   <div class="stage-wrap">
-    <p class="hint" aria-hidden="true">Draw here with your finger. It's henna.</p>
+    <p class="hint" aria-hidden="true"><span class="t">Draw here with your finger. It's henna.</span><span class="m">Draw here. It's henna.</span></p>
     <canvas class="stage" id="stage" role="img" aria-label="A henna mandala being piped in fresh paste on skin. It dries, the paste comes off, and the stain deepens from orange to maroon. Draw on it with your finger or mouse."></canvas>
   </div>
 </section>
@@ -231,14 +249,14 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   <div class="wrap">
     <h2 id="h-occ">All occasions accepted</h2>
     <ul class="rows">
-      <li><a class="row js-wa" href="https://wa.me/17324987248" data-occ="a wedding">Weddings<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
-      <li><a class="row js-wa" href="https://wa.me/17324987248" data-occ="an engagement">Engagements<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
-      <li><a class="row js-wa" href="https://wa.me/17324987248" data-occ="a baby shower">Baby showers<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
-      <li><a class="row js-wa" href="https://wa.me/17324987248" data-occ="a birthday party">Birthday parties<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
-      <li><a class="row js-wa" href="https://wa.me/17324987248" data-occ="an anniversary">Anniversaries<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
-      <li><a class="row js-wa" href="https://wa.me/17324987248" data-occ="a festival">Festivals<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
-      <li><a class="row js-wa" href="https://wa.me/17324987248" data-occ="a casual booking">Casual bookings<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
-      <li><a class="row js-wa" href="https://wa.me/17324987248" data-occ="temporary tattoos" data-kind="tattoo">Temporary tattoos<span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      <li><a class="row js-wa" href="https://wa.me/17324987248" data-occ="a wedding">Weddings<span class="sr">, message me on WhatsApp</span><span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      <li><a class="row js-wa" href="https://wa.me/17324987248" data-occ="an engagement">Engagements<span class="sr">, message me on WhatsApp</span><span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      <li><a class="row js-wa" href="https://wa.me/17324987248" data-occ="a baby shower">Baby showers<span class="sr">, message me on WhatsApp</span><span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      <li><a class="row js-wa" href="https://wa.me/17324987248" data-occ="a birthday party">Birthday parties<span class="sr">, message me on WhatsApp</span><span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      <li><a class="row js-wa" href="https://wa.me/17324987248" data-occ="an anniversary">Anniversaries<span class="sr">, message me on WhatsApp</span><span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      <li><a class="row js-wa" href="https://wa.me/17324987248" data-occ="a festival">Festivals<span class="sr">, message me on WhatsApp</span><span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      <li><a class="row js-wa" href="https://wa.me/17324987248" data-occ="something casual">Casual bookings<span class="sr">, message me on WhatsApp</span><span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      <li><a class="row js-wa" href="https://wa.me/17324987248" data-occ="temporary tattoos" data-kind="tattoo">Temporary tattoos<span class="sr">, message me on WhatsApp</span><span class="arrow"><svg aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
     </ul>
     <p class="note">Tap one and WhatsApp opens with your message started.</p>
   </div>
@@ -264,7 +282,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <div class="edge on-rani" data-edge="down" aria-hidden="true"><canvas></canvas></div>
 
 <section class="band rani" aria-labelledby="h-work">
-  <div class="wrap">
+  <div class="wrap work">
     <h2 id="h-work">See my work</h2>
     <a class="ig" href="https://www.instagram.com/royal_henna_by_neha/">
       <svg aria-hidden="true"><use href="#i-ig"/></svg>
@@ -279,10 +297,10 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <section class="plan" id="plan" aria-labelledby="h-plan">
   <div class="wrap">
     <h2 id="h-plan">Plan your henna</h2>
-    <p class="plan-lede">Fill this in and I'll get your message on WhatsApp with everything I need to reply with a price and my availability.</p>
+    <p class="plan-lede">Answer a few questions and I'll have everything I need to send you a price and my availability.</p>
     <form id="planForm" novalidate>
-      <fieldset id="f-occ">
-        <legend>What's the occasion?</legend>
+      <fieldset id="f-occ" aria-describedby="e-occ">
+        <legend id="occ-l">What's the occasion?</legend>
         <div class="chips">
           <input type="radio" name="occ" id="o1" value="Wedding"><label for="o1">Wedding</label>
           <input type="radio" name="occ" id="o2" value="Engagement"><label for="o2">Engagement</label>
@@ -290,34 +308,34 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
           <input type="radio" name="occ" id="o4" value="Birthday party"><label for="o4">Birthday party</label>
           <input type="radio" name="occ" id="o5" value="Anniversary"><label for="o5">Anniversary</label>
           <input type="radio" name="occ" id="o6" value="Festival"><label for="o6">Festival</label>
-          <input type="radio" name="occ" id="o7" value="Casual booking"><label for="o7">Casual</label>
+          <input type="radio" name="occ" id="o7" value="Casual booking"><label for="o7">Casual booking</label>
           <input type="radio" name="occ" id="o8" value="Temporary tattoos"><label for="o8">Temporary tattoos</label>
         </div>
-        <p class="err">Pick the occasion so I know what to plan for.</p>
+        <p class="err" id="e-occ">Pick the occasion so I know what to plan for.</p>
       </fieldset>
       <div class="two">
         <div id="f-date">
-          <label class="l" for="date">Date <span class="opt">(if you know it)</span></label>
+          <label class="l" for="date">Date <span class="opt">(optional)</span></label>
           <input type="date" id="date" name="date">
         </div>
         <div id="f-ppl">
-          <label class="l" for="ppl">How many people want henna? <span class="opt">(optional)</span></label>
+          <label class="l" for="ppl">How many people? <span class="opt">(optional)</span></label>
           <input type="number" id="ppl" name="ppl" inputmode="numeric" min="1" max="500" placeholder="For example, 6">
         </div>
       </div>
       <div id="f-where">
         <label class="l" for="where">Town or city</label>
-        <input type="text" id="where" name="where" autocomplete="address-level2" placeholder="For example, Edison, NJ">
-        <p class="err">Tell me the town so I can check I can get there.</p>
+        <input type="text" id="where" name="where" autocomplete="address-level2" placeholder="For example, Edison, NJ" aria-describedby="e-where">
+        <p class="err" id="e-where">Tell me the town so I can check I can get there.</p>
       </div>
       <div id="f-name">
         <label class="l" for="name">Your name</label>
-        <input type="text" id="name" name="name" autocomplete="given-name">
-        <p class="err">Add your name so I know who I'm talking to.</p>
+        <input type="text" id="name" name="name" autocomplete="given-name" aria-describedby="e-name">
+        <p class="err" id="e-name">Add your name so I know who I'm talking to.</p>
       </div>
       <div>
         <label class="l" for="notes">Anything else? <span class="opt">(optional)</span></label>
-        <textarea id="notes" name="notes" placeholder="Bridal full hands, simple designs for guests, a time of day…"></textarea>
+        <textarea id="notes" name="notes" maxlength="500" placeholder="Bridal full hands, simple designs for guests, a time of day…"></textarea>
       </div>
       <div class="send">
         <button class="btn btn-fill" type="submit"><svg aria-hidden="true"><use href="#i-wa"/></svg>Send on WhatsApp</button>
@@ -325,6 +343,11 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
         <button class="alt" type="button" id="asText">No WhatsApp? Send it as a regular text instead.</button>
       </div>
     </form>
+    <aside class="preview" aria-hidden="true">
+      <h3>Your message to Neha</h3>
+      <div class="bubble" id="preview"></div>
+      <p class="to">Goes to WhatsApp +1 (732) 498-7248</p>
+    </aside>
   </div>
 </section>
 
@@ -335,7 +358,6 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     <h2 id="h-close">Royal Henna<br>by Neha</h2>
     <p>Hands are in every photo from the day. I'll make sure yours are worth looking at.</p>
     <a class="btn js-wa" href="https://wa.me/17324987248" data-occ=""><svg aria-hidden="true"><use href="#i-wa"/></svg>Book on WhatsApp</a>
-    <p class="or">Or call me at <a href="tel:+13139796757">313-979-6757</a></p>
   </div>
 </section>
 </main>
@@ -344,8 +366,8 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   <div class="wrap">
     <b>Royal Henna by Neha</b>
     <ul>
-      <li><a href="tel:+13139796757">313-979-6757</a></li>
-      <li><a class="js-wa" href="https://wa.me/17324987248" data-occ="">WhatsApp +1 (732) 498-7248</a></li>
+      <li><a href="tel:+13139796757">Call 313-979-6757</a></li>
+      <li><span>WhatsApp +1 (732) 498-7248</span></li>
       <li><a href="https://www.instagram.com/royal_henna_by_neha/">Instagram @royal_henna_by_neha</a></li>
     </ul>
     <small>Henna and temporary tattoos for every occasion · NJ, NYC, Philly and PA</small>
@@ -380,10 +402,28 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     var d = new Date(+m[1], +m[2] - 1, +m[3]);
     return d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' });
   }
+  function compose(){
+    var occ = f.querySelector('input[name=occ]:checked'), o = occ ? occ.value : '';
+    var lines = ["Hi Neha! I'd like to book " + (o === 'Temporary tattoos' ? 'temporary tattoos.' : 'henna.')];
+    lines.push('Occasion: ' + (o || '…'));
+    lines.push('Date: ' + (val('date') ? niceDate(val('date')) : 'not set yet'));
+    lines.push('Where: ' + (val('where') || '…'));
+    var n = parseInt(val('ppl'), 10);
+    if (n >= 1) lines.push('People getting henna: ' + Math.min(n, 500));
+    lines.push('Name: ' + (val('name') || '…'));
+    if (val('notes')) lines.push('Notes: ' + val('notes'));
+    return lines.join('\n');
+  }
+  var pv = document.getElementById('preview');
+  function preview(){ if (pv) pv.textContent = compose(); }
+  var dateIn = document.getElementById('date'), today = new Date();
+  dateIn.min = today.getFullYear() + '-' + String(today.getMonth() + 1).padStart(2, '0') + '-' + String(today.getDate()).padStart(2, '0');
   function build(){
     var ok = true, first = null;
     function check(box, good){
       box.classList.toggle('bad', !good);
+      var field = box.tagName === 'FIELDSET' ? box : box.querySelector('input');
+      if (good) field.removeAttribute('aria-invalid'); else field.setAttribute('aria-invalid', 'true');
       if (!good){ ok = false; if (!first) first = box; }
     }
     var occ = f.querySelector('input[name=occ]:checked');
@@ -396,15 +436,9 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       if (focusable) setTimeout(function(){ focusable.focus({ preventScroll: true }); }, 350);
       return null;
     }
-    var lines = ["Hi Neha! I'd like to book " + (occ.value === 'Temporary tattoos' ? 'temporary tattoos.' : 'henna.')];
-    lines.push('Occasion: ' + occ.value);
-    lines.push('Date: ' + (val('date') ? niceDate(val('date')) : 'not set yet'));
-    lines.push('Where: ' + val('where'));
-    if (val('ppl')) lines.push('People getting henna: ' + val('ppl'));
-    lines.push('Name: ' + val('name'));
-    if (val('notes')) lines.push('Notes: ' + val('notes'));
-    return lines.join('\n');
+    return compose();
   }
+  preview();
   f.addEventListener('submit', function(e){
     e.preventDefault();
     var msg = build();
@@ -414,14 +448,13 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     var msg = build();
     if (msg) window.location.href = window.RH.smsLink(msg);
   });
-  f.addEventListener('input', function(e){
+  function clear(e){
     var box = e.target.closest('.bad');
-    if (box) box.classList.remove('bad');
-  });
-  f.addEventListener('change', function(e){
-    var box = e.target.closest('.bad');
-    if (box) box.classList.remove('bad');
-  });
+    if (box){ box.classList.remove('bad'); (box.tagName === 'FIELDSET' ? box : e.target).removeAttribute('aria-invalid'); }
+    preview();
+  }
+  f.addEventListener('input', clear);
+  f.addEventListener('change', clear);
 })();
 
 /* ===== Henna: paste, drying, scrape, stain ===== */
@@ -432,6 +465,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     LINE_PHONE: 2.6,      // paste line width, css px
     LINE_DESK: 3.2,
     DRAW_SPEED_R: 1.9,    // hero cone speed, in mandala radii per second
+    FIRST_SPEED: 1.9,     // the first design on page load pipes this much faster
     DRAW_SPEED_MIN: 240,  // px/s floor
     TRAVEL_SPEED: 1100,   // px/s when the cone lifts between strokes
     DOT_DWELL: 16,        // px of drawing time spent squeezing out a dot
@@ -536,7 +570,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     ctx.strokeStyle = '#2b1b0e';
     for (key in pastes){ b = pastes[key]; ctx.globalAlpha = b.a; ctx.lineWidth = this.width(b.c); ctx.stroke(b.p); }
     ctx.save(); ctx.translate(-this.w * 0.13, -this.w * 0.15); ctx.strokeStyle = 'rgb(255,236,208)';
-    for (key in pastes){ b = pastes[key]; if (b.x <= 0.02) continue; ctx.globalAlpha = b.a * b.x; ctx.lineWidth = this.width(b.c) * 0.32; ctx.stroke(b.p); }
+    for (key in pastes){ b = pastes[key]; if (b.x <= 0.02) continue; ctx.globalAlpha = b.a * b.x * 0.6; ctx.lineWidth = this.width(b.c) * 0.5; ctx.stroke(b.p); }
     ctx.restore();
     ctx.globalAlpha = 1;
     // crumbs of dry paste falling away
@@ -678,7 +712,13 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     }
     for (i = n - 1; i >= 0; i--){
       var cxp = off + (i + 1) * P;
-      if (cxp > 6 && cxp < W - 6) S.push({ pts: [pt(cxp, yb - 21), pt(cxp + 0.01, yb - 21)], cls: 2 });
+      if (cxp < 10 || cxp > W - 10) continue;
+      if (i % 2){ S.push({ pts: [pt(cxp, yb - 21), pt(cxp + 0.01, yb - 21)], cls: 2 }); continue; }
+      // a small petal standing on the rule
+      var pe = [], hw = 4.2, L = 13, b0 = yb - 14;
+      for (j = 0; j <= 10; j++){ var t = j / 10; pe.push(pt(cxp - hw * Math.sin(Math.PI * t) * (1 - t * 0.45), b0 - L * t)); }
+      for (j = 10; j >= 0; j--){ var t2 = j / 10; pe.push(pt(cxp + hw * Math.sin(Math.PI * t2) * (1 - t2 * 0.45), b0 - L * t2)); }
+      S.push({ pts: pe, cls: 1 });
     }
     return S;
   }
@@ -787,7 +827,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     function newDesign(now, from){
       var W = h.W, H = h.H;
       R = Math.min(W, H) / 2 * 0.86 / 1.06;   // outer dots reach ~1.06R
-      piper.speed = Math.max(T.DRAW_SPEED_MIN, R * T.DRAW_SPEED_R);
+      piper.speed = Math.max(T.DRAW_SPEED_MIN, R * T.DRAW_SPEED_R) * (variant === 0 ? T.FIRST_SPEED : 1);
       piper.load(handDrawn(mandala(W / 2, H / 2, R, variant++), Math.max(0.35, R / 320)), from);
       phase = 'drawing'; tPhase = now;
       if (reduced){ piper.finishNow(now, T.FLAKE + T.DEEPEN); phase = 'still'; }
@@ -824,7 +864,8 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       } else if (phase === 'showing' && now - tPhase > T.SWEEP + T.FLAKE + T.DEEPEN + T.HOLD + 1){
         newDesign(now, [piper.x, piper.y]);
       }
-      var busy = h.draw(now, dt);
+      var still = phase === 'showing' && !user.hover && !user.down && !h.flakes.length && now - tPhase > T.SWEEP + T.FLAKE + T.DEEPEN + 0.3 && now - tPhase < T.SWEEP + T.FLAKE + T.DEEPEN + T.HOLD - 0.1;
+      var busy = still ? true : h.draw(now, dt);
       var s = h.W < 700 ? 0.85 : 1;
       if (user.hover && (user.type === 'mouse' || user.down)){
         var r2 = c.getBoundingClientRect();
@@ -883,7 +924,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     function build(now, instant){
       P = h.W < 720 ? 40 : 48;
       h.bg = skinEdge(P, up); h.segs = []; h.flakes = [];
-      piper.load(handDrawn(laceEdge(h.W, h.H, P, up), 0.3), [-20, up ? h.H - 10 : 10]);
+      piper.load(handDrawn(laceEdge(h.W, h.H, P, up), 0.85), [-20, up ? h.H - 10 : 10]);
       if (instant || reduced){ piper.finishNow(now, T.FLAKE + T.DEEPEN + 1); state = 'still'; }
       else state = 'drawing';
     }
